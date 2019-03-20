@@ -65,3 +65,40 @@ XXX need horizontal sockets.  Five line items(!)
  25 WM2512-ND               Molex           16-02-0103
  10 609-2380-ND             Amphenol ICC    69176-006LF
  50 609-4518-ND             Amphenol ICC    47745-001LF
+
+
+# Calculate LMZ14203 Parameters
+
+## Input Voltage
+
+Nominal cell voltage is 3.7V.  Min is 3.3V; max is 4.2V.
+
+Assume 4 cells.
+
+    >>> vv = 3.3, 3.7, 4.2
+    >>> [4 * v for v in vv]
+    [13.2, 14.8, 16.8]
+
+
+## FB voltage divider
+
+Needs resistors between 1K and 10K.  I have these values.
+
+    >>> r = [1.0, 1.2, 1.5, 2.0, 2.7, 3.3, 4.3, 5.1, 6.8, 8.2, 10]
+
+Find the voltage each pair would generate if used as a divider.
+(See datasheet section 8.2.2.2.2.)
+
+    >>> z = [(0.8 * (1 + a / b), a, b) for a in r for b in r]
+
+Sort by voltage and eyeball select the first one above 5V.
+
+    >>> zz = sorted(z)
+    >>> zz
+
+The best values are 1.2K and 8.2K.  They give 5.173V.
+
+
+## R<sub>ON</sub> Value
+
+Minimum on time is 150ns.

@@ -80,6 +80,16 @@ Assume 4 cells.
     [13.2, 14.8, 16.8]
 
 
+## Enable Divider
+
+    Rent / Renb = (Vin_uvlo / 1.18V) - 1
+    Rent / Renb + 1 = Vin_uvlo / 1.18V
+    1.18V * (Rent / Renb + 1) = Vin_uvlo
+
+    1.18V * (68K / 6.8K + 1) = 12.98V
+
+
+
 ## FB voltage divider
 
 Needs resistors between 1K and 10K.  I have these values.
@@ -101,4 +111,15 @@ The best values are 1.2K and 8.2K.  They give 5.173V.
 
 ## R<sub>ON</sub> Value
 
+See datasheet section 8.2.2.2.7.
+
 Minimum on time is 150ns.
+
+R[ON] >= V[IN(MAX)] * 150ns / (1.3 * 10^-10)
+
+R[ON] >= 16.8 * 150e-9 / 1.3e-10
+       = 19384
+
+T<sub>ON</sub> = (1.3 * 10^-10 * R<sub>ON</sub>)
+
+WEBENCH uses 110K for R<sub>ON</sub>.

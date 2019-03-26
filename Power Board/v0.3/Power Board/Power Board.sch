@@ -39,25 +39,6 @@ F 3 "~" H 2150 2650 50  0001 C CNN
 	1    2150 2650
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 4150 3600 1450 1050
-U 5C93509D
-F0 "Pi_Power" 50
-F1 "Pi_Power.sch" 50
-F2 "Battery_Power" I L 4150 3900 50 
-F3 "5.1V_unswitched" O R 5600 3900 50 
-$EndSheet
-$Sheet
-S 6500 3600 1500 1000
-U 5C958DBD
-F0 "Soft Switch" 50
-F1 "Soft_Switch.sch" 50
-F2 "5.1V_unswitched" I L 6500 3900 50 
-F3 "5.1V_switched" O R 8000 3900 50 
-F4 "Power_Ctl_GPIO" I R 8000 4300 50 
-F5 "Power_Sense_GPIO" O R 8000 4400 50 
-F6 "Power_Button" I L 6500 4350 50 
-$EndSheet
 $Comp
 L power:PWR_FLAG #FLG02
 U 1 1 5C9A6A29
@@ -103,8 +84,6 @@ Wire Wire Line
 	2150 2750 3250 2750
 Wire Wire Line
 	3250 2750 3250 3900
-Wire Wire Line
-	3250 3900 4150 3900
 Connection ~ 2150 2750
 $Comp
 L Switch:SW_Push SW1
@@ -137,65 +116,60 @@ Wire Wire Line
 	2200 4350 2100 4350
 Wire Wire Line
 	2100 4350 2100 4450
-Wire Wire Line
-	2600 4350 3750 4350
-Wire Wire Line
-	3750 4350 3750 5000
-Wire Wire Line
-	3750 5000 6000 5000
-Wire Wire Line
-	6000 5000 6000 4350
-Wire Wire Line
-	6000 4350 6500 4350
-Wire Wire Line
-	6500 3900 5600 3900
 $Comp
 L Connector_Generic:Conn_01x06 J2
 U 1 1 5C997D7E
-P 9800 4250
-F 0 "J2" H 9880 4242 50  0000 L CNN
-F 1 "Conn_01x06" H 9880 4151 50  0000 L CNN
-F 2 "" H 9800 4250 50  0001 C CNN
-F 3 "~" H 9800 4250 50  0001 C CNN
-F 4 "WM4904-ND" H 0   0   50  0001 C CNN "Digikey No."
-F 5 "Molex" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 "70553-0005" H 0   0   50  0001 C CNN "Part No."
-	1    9800 4250
+P 9800 4300
+F 0 "J2" H 9880 4292 50  0000 L CNN
+F 1 "Conn_01x06" H 9880 4201 50  0000 L CNN
+F 2 "" H 9800 4300 50  0001 C CNN
+F 3 "~" H 9800 4300 50  0001 C CNN
+F 4 "WM4904-ND" H 0   50  50  0001 C CNN "Digikey No."
+F 5 "Molex" H 0   50  50  0001 C CNN "Manufacturer"
+F 6 "70553-0005" H 0   50  50  0001 C CNN "Part No."
+	1    9800 4300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9600 4050 8850 4050
+	9600 4100 6000 4100
 Wire Wire Line
-	8850 4050 8850 3900
+	9600 4200 9300 4200
 Wire Wire Line
-	8850 3900 8000 3900
-Wire Wire Line
-	8000 4300 8850 4300
-Wire Wire Line
-	8850 4300 8850 4250
-Wire Wire Line
-	8850 4250 9600 4250
-Wire Wire Line
-	8000 4400 8950 4400
-Wire Wire Line
-	8950 4400 8950 4350
-Wire Wire Line
-	8950 4350 9600 4350
-Wire Wire Line
-	9600 4150 9500 4150
-Wire Wire Line
-	9500 4150 9500 4750
+	9300 4200 9300 4800
 $Comp
 L power:GND #PWR03
 U 1 1 5C99AE97
-P 9500 4750
-F 0 "#PWR03" H 9500 4500 50  0001 C CNN
-F 1 "GND" H 9505 4577 50  0000 C CNN
-F 2 "" H 9500 4750 50  0001 C CNN
-F 3 "" H 9500 4750 50  0001 C CNN
-	1    9500 4750
+P 9300 4800
+F 0 "#PWR03" H 9300 4550 50  0001 C CNN
+F 1 "GND" H 9305 4627 50  0000 C CNN
+F 2 "" H 9300 4800 50  0001 C CNN
+F 3 "" H 9300 4800 50  0001 C CNN
+	1    9300 4800
 	1    0    0    -1  
 $EndComp
-NoConn ~ 9600 4450
-NoConn ~ 9600 4550
+NoConn ~ 9600 4500
+NoConn ~ 9600 4600
+Wire Wire Line
+	6000 4100 6000 3900
+Wire Wire Line
+	6000 3900 5600 3900
+Wire Wire Line
+	5600 4400 9600 4400
+Wire Wire Line
+	9600 4300 5600 4300
+Wire Wire Line
+	4100 3900 3250 3900
+Wire Wire Line
+	2600 4350 4100 4350
+$Sheet
+S 4100 3600 1500 1000
+U 5C958DBD
+F0 "Soft Switch" 50
+F1 "Soft_Switch.sch" 50
+F2 "Power_Ctl_GPIO" I R 5600 4300 50 
+F3 "Power_Sense_GPIO" O R 5600 4400 50 
+F4 "Power_Button" I L 4100 4350 50 
+F5 "5.2V_switched" O R 5600 3900 50 
+F6 "Battery_Power" I L 4100 3900 50 
+$EndSheet
 $EndSCHEMATC

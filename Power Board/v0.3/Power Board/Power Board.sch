@@ -159,8 +159,8 @@ Wire Wire Line
 $Sheet
 S 4100 3600 1500 1000
 U 5C958DBD
-F0 "Soft Switch" 50
-F1 "Soft_Switch.sch" 50
+F0 "Pi Power" 50
+F1 "Pi_Power.sch" 50
 F2 "Power_Ctl_GPIO" I R 5600 4300 50 
 F3 "Power_Sense_GPIO" O R 5600 4400 50 
 F4 "Power_Button" I L 4100 4350 50 

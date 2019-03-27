@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -15,13 +15,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text HLabel 2550 2600 0    50   Input ~ 0
-Battery_Power_in
+Battery_Power
 Text HLabel 2600 3550 0    50   Input ~ 0
 Enable
-Text HLabel 2600 4250 0    50   Input ~ 0
+Text HLabel 2600 4250 0    50   BiDi ~ 0
 PMBUS_SCL
-Text HLabel 2600 4600 0    50   Input ~ 0
+Text HLabel 2600 4600 0    50   BiDi ~ 0
 PMBUS_SDA
-Text HLabel 8150 3500 2    50   Input ~ 0
-Panel_Power_Out
+Text HLabel 8150 3500 2    50   Output ~ 0
+Panel_Power
 $EndSCHEMATC

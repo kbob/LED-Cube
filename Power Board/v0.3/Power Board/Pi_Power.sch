@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 4
+Sheet 4 4
 Title ""
 Date ""
 Rev ""
@@ -473,7 +473,7 @@ Raspberry Pi Power
 Text HLabel 2300 3350 0    50   Input ~ 0
 Battery_Power
 Text HLabel 9450 3350 2    50   Output ~ 0
-5.1V_unswitched
+5.2V_unswitched
 Wire Wire Line
 	2300 3350 3050 3350
 Connection ~ 7050 3950

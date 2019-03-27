@@ -1,6 +1,74 @@
 # Power Board
 
-## Polyfuses
+## Power Board v0.3
+
+### Calculate LMZ14203 Parameters
+
+#### Input Voltage
+
+Nominal cell voltage is 3.7V.  Min is 3.3V; max is 4.2V.
+
+Assume 4 cells.
+
+```python
+>>> vv = 3.3, 3.7, 4.2
+>>> [4 * v for v in vv]
+[13.2, 14.8, 16.8]
+```
+
+So nominal battery voltage is 14.8V, min and max are 13.2 and 16.8V.
+
+
+#### Enable Divider
+
+    Rent / Renb = (Vin_uvlo / 1.18V) - 1
+    Rent / Renb + 1 = Vin_uvlo / 1.18V
+    1.18V * (Rent / Renb + 1) = Vin_uvlo
+
+    1.18V * (68K / 6.8K + 1) = 12.98V
+
+So it will shut off when battery voltage drops below 12.98V.
+
+
+#### FB voltage divider
+
+Use R<sub>FBT</sub> = 5.90&ohm; and R<sub>FBB</sub> = 1.07&ohm;.
+
+V<sub>0</sub> = 0.8V * (1 + R<sub>FBT</sub> / R<sub>FBB</sub>)
+<br>
+V<sub>0</sub> = 0.8V * (1 + 5.90 / 1.07)
+<br>
+V<sub>0</sub> = 5.21V
+
+That's a healthy 5V. (-:
+
+
+#### R<sub>ON</sub> Value
+
+(See datasheet section 8.2.2.2.7.)
+
+Minimum on time is 150ns.
+
+R<sub>ON</sub> >= V<sub>IN(MAX)</sub> \* 150ns / (1.3 \* 10^-10)
+
+R<sub>ON</sub> >= 16.8 * 150e-9 / 1.3e-10
+       = 19384
+
+T<sub>ON</sub> = (1.3 \* 10^-10 \* R<sub>ON</sub>) / V<sub>IN</sub>
+
+WEBENCH uses 110K for R<sub>ON</sub>.  That gives T<sub>ON</sub> = 966nsec.
+Is that good?  Is that bad?
+
+## Calculate TPS53819A Parameters
+
+All parameters are from WEBENCH.
+
+
+
+
+## Power Board v0.2
+
+### Polyfuses
 
     Bourns MF-MSMF250/16X-2
     as used on Raspberry Pi 3 Model B+
@@ -11,7 +79,7 @@
     12V, 4A, 1206 SMT
 
 
-## Capacitors
+### Capacitors
 
     Panasonic EEU-FC1C182S
     1800µF 16V 3000hours low ESR
@@ -26,7 +94,7 @@
     Digikey filtered list
     https://www.digikey.com/short/p347pv
 
-## Connectors
+### Connectors
 
    <!-- Solderable hole for power in
    2.54mm female socket for Raspberry Pi -->
@@ -45,81 +113,23 @@
   JST SVH-21T-P1.1
 
 
-# Digi-Key order
+## Digi-Key order
 
-QTY DK-PART                 MANUFACTURER    MFR PART
+    QTY DK-PART                 MANUFACTURER    MFR PART
 
- 25 HHKC16H-ND              Assmann WSW     AWP 16-7240-T
- 30 F9967CT-ND              LittelFuse      NANOSMD400LR-C-2
- 10 MF-MSMF250/16X-2CT-ND   Bourns          MF-MSMF250/16X
- 30 P122389-ND              Panasonic       EEU-FS1C511
- 30 455-1648-ND             JST             B2PS-VH(LF)(SN)
- 30 455-1183-ND             JST             VHR-2N
- 30 455-1185-ND             JST             VHR-4N
-250 455-1133-1-ND           JST             SVH-21T-P1.1
+     25 HHKC16H-ND              Assmann WSW     AWP 16-7240-T
+     30 F9967CT-ND              LittelFuse      NANOSMD400LR-C-2
+     10 MF-MSMF250/16X-2CT-ND   Bourns          MF-MSMF250/16X
+     30 P122389-ND              Panasonic       EEU-FS1C511
+     30 455-1648-ND             JST             B2PS-VH(LF)(SN)
+     30 455-1183-ND             JST             VHR-2N
+     30 455-1185-ND             JST             VHR-4N
+    250 455-1133-1-ND           JST             SVH-21T-P1.1
 
-XXX need horizontal sockets.  Five line items(!)
+    XXX need horizontal sockets.  Five line items(!)
 
-  6 WM4900-ND               Molex           07055-30001
- 10 WM2900-ND               Molex           50-57-9402
- 25 WM2512-ND               Molex           16-02-0103
- 10 609-2380-ND             Amphenol ICC    69176-006LF
- 50 609-4518-ND             Amphenol ICC    47745-001LF
-
-
-# Calculate LMZ14203 Parameters
-
-## Input Voltage
-
-Nominal cell voltage is 3.7V.  Min is 3.3V; max is 4.2V.
-
-Assume 4 cells.
-
-    >>> vv = 3.3, 3.7, 4.2
-    >>> [4 * v for v in vv]
-    [13.2, 14.8, 16.8]
-
-
-## Enable Divider
-
-    Rent / Renb = (Vin_uvlo / 1.18V) - 1
-    Rent / Renb + 1 = Vin_uvlo / 1.18V
-    1.18V * (Rent / Renb + 1) = Vin_uvlo
-
-    1.18V * (68K / 6.8K + 1) = 12.98V
-
-
-
-## FB voltage divider
-
-Needs resistors between 1K and 10K.  I have these values.
-
-    >>> r = [1.0, 1.2, 1.5, 2.0, 2.7, 3.3, 4.3, 5.1, 6.8, 8.2, 10]
-
-Find the voltage each pair would generate if used as a divider.
-(See datasheet section 8.2.2.2.2.)
-
-    >>> z = [(0.8 * (1 + a / b), a, b) for a in r for b in r]
-
-Sort by voltage and eyeball select the first one above 5V.
-
-    >>> zz = sorted(z)
-    >>> zz
-
-The best values are 1.2K and 8.2K.  They give 5.173V.
-
-
-## R<sub>ON</sub> Value
-
-See datasheet section 8.2.2.2.7.
-
-Minimum on time is 150ns.
-
-R[ON] >= V[IN(MAX)] * 150ns / (1.3 * 10^-10)
-
-R[ON] >= 16.8 * 150e-9 / 1.3e-10
-       = 19384
-
-T<sub>ON</sub> = (1.3 * 10^-10 * R<sub>ON</sub>)
-
-WEBENCH uses 110K for R<sub>ON</sub>.
+      6 WM4900-ND               Molex           07055-30001
+     10 WM2900-ND               Molex           50-57-9402
+     25 WM2512-ND               Molex           16-02-0103
+     10 609-2380-ND             Amphenol ICC    69176-006LF
+     50 609-4518-ND             Amphenol ICC    47745-001LF

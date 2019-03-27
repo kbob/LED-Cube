@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 3 3
 Title ""
 Date ""
 Rev ""
@@ -14,362 +14,779 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 2280 4900 0    50   ~ 0
-Push to power on.\nPush to trigger soft power off.\nPush and hold to force power off.
-Text Notes 2300 5450 0    50   ~ 0
-Drive low to power off.
-$Comp
-L Device:Fuse F?
-U 1 1 5C9656FC
-P 8050 2800
-AR Path="/5C9656FC" Ref="F?"  Part="1" 
-AR Path="/5C958DBD/5C9656FC" Ref="F1"  Part="1" 
-F 0 "F1" V 7950 2800 50  0000 C CNN
-F 1 "2.5A" V 8150 2800 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" V 7980 2800 50  0001 C CNN
-F 3 "~" H 8050 2800 50  0001 C CNN
-F 4 "1210" H 2150 -1750 50  0001 C CNN "Package"
-F 5 "Bourns" H 2150 -1750 50  0001 C CNN "Manufacturer"
-F 6 "MF-MSMF250/16X-2" H 2150 -1750 50  0001 C CNN "Part No."
-F 7 "NF-NSNF240/16-2CT-ND" H 2150 -1750 50  0001 C CNN "Digikey No."
-	1    8050 2800
-	0    1    1    0   
-$EndComp
-Text Notes 2250 2350 0    100  ~ 0
-Soft Power Switch
-Text HLabel 2900 2800 0    50   Input ~ 0
-Battery_Power
-Text HLabel 8800 2800 2    50   Output ~ 0
+Text HLabel 10250 2000 2    50   Output ~ 0
 5.2V_switched
-Text HLabel 2950 5300 0    50   Input ~ 0
-Power_Ctl_GPIO
-$Comp
-L Power_Board:SI5504BDC Q1
-U 2 1 5C931E81
-P 5100 2800
-F 0 "Q1" V 5328 2800 50  0000 C CNN
-F 1 "SI5504BDC" V 5237 2800 50  0000 C CNN
-F 2 "" H 5100 2800 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/74483/si5504bdc.pdf" H 5100 2800 50  0001 C CNN
-F 4 "SI5504BDC-T1-GE3CT-ND" H -850 -150 50  0001 C CNN "Digikey No."
-F 5 "Vishay" H -850 -150 50  0001 C CNN "Manufacturer"
-F 6 "SI5504BDC-T1-GE3" H -850 -150 50  0001 C CNN "Part No."
-	2    5100 2800
-	0    1    -1   0   
-$EndComp
-$Comp
-L Power_Board:SI5504BDC Q1
-U 1 1 5C930F5F
-P 5100 4600
-F 0 "Q1" H 4900 4750 50  0000 L CNN
-F 1 "SI5504BDC" H 4650 4450 50  0000 L CNN
-F 2 "" H 5100 4600 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/74483/si5504bdc.pdf" H 5100 4600 50  0001 C CNN
-F 4 "SI5504BDC-T1-GE3CT-ND" H -650 550 50  0001 C CNN "Digikey No."
-F 5 "Vishay" H -650 550 50  0001 C CNN "Manufacturer"
-F 6 "SI5504BDC-T1-GE3" H -650 550 50  0001 C CNN "Part No."
-	1    5100 4600
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:L_Core_Ferrite_Small L1
-U 1 1 5C92ABE2
-P 7650 2800
-F 0 "L1" V 7750 2800 50  0000 C CNN
-F 1 "300R" V 7550 2800 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 7650 2800 50  0001 C CNN
-F 3 "https://www.niccomp.com/catalog/ncbh.pdf" H 7650 2800 50  0001 C CNN
-F 4 "not avail." H 400 -150 50  0001 C CNN "Digikey No."
-F 5 "NIC" H 400 -150 50  0001 C CNN "Manufacturer"
-F 6 "NCB-H0603R301TR100F" H 400 -150 50  0001 C CNN "Part No."
-	1    7650 2800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR04
-U 1 1 5C92C0AF
-P 5100 4900
-F 0 "#PWR04" H 5100 4650 50  0001 C CNN
-F 1 "GND" H 5105 4727 50  0000 C CNN
-F 2 "" H 5100 4900 50  0001 C CNN
-F 3 "" H 5100 4900 50  0001 C CNN
-	1    5100 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Diode:BAT54C D1
-U 1 1 5C92C678
-P 4300 4600
-F 0 "D1" V 4254 4688 50  0000 L CNN
-F 1 "BAT54C" V 4345 4688 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4375 4725 50  0001 L CNN
-F 3 "https://www.diodes.com/_files/datasheets/ds11005.pdf" H 4220 4600 50  0001 C CNN
-F 4 "BAT54CCT-ND" H -850 250 50  0001 C CNN "Digikey No."
-F 5 "Diodes Inc." H -850 250 50  0001 C CNN "Manufacturer"
-F 6 "BAT54CTA" H -850 250 50  0001 C CNN "Part No."
-	1    4300 4600
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:R R3
 U 1 1 5C92D1DA
-P 5850 4600
-F 0 "R3" V 5750 4600 50  0000 C CNN
-F 1 "330K" V 5950 4600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5780 4600 50  0001 C CNN
-F 3 "~" H 5850 4600 50  0001 C CNN
-F 4 "Yageo" H -850 550 50  0001 C CNN "Manufacturer"
-F 5 "RC0603JR-07330K" H -850 550 50  0001 C CNN "Part No."
-	1    5850 4600
+P 4900 5250
+F 0 "R3" V 4800 5250 50  0000 C CNN
+F 1 "330K" V 5000 5250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4830 5250 50  0001 C CNN
+F 3 "~" H 4900 5250 50  0001 C CNN
+F 4 "Yageo" H -1800 1200 50  0001 C CNN "Manufacturer"
+F 5 "RC0603JR-07330K" H -1800 1200 50  0001 C CNN "Part No."
+	1    4900 5250
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R5
 U 1 1 5C92D4D4
-P 6500 4600
-F 0 "R5" V 6600 4550 50  0000 L CNN
-F 1 "100K" V 6400 4500 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6430 4600 50  0001 C CNN
-F 3 "~" H 6500 4600 50  0001 C CNN
-F 4 "Yageo" H -500 1300 50  0001 C CNN "Manufacturer"
-F 5 "RC0603JR-07100K" H -500 1300 50  0001 C CNN "Part No."
-	1    6500 4600
+P 5600 5250
+F 0 "R5" V 5700 5200 50  0000 L CNN
+F 1 "100K" V 5500 5150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5530 5250 50  0001 C CNN
+F 3 "~" H 5600 5250 50  0001 C CNN
+F 4 "Yageo" H -1400 1950 50  0001 C CNN "Manufacturer"
+F 5 "RC0603JR-07100K" H -1400 1950 50  0001 C CNN "Part No."
+	1    5600 5250
 	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 5250 5250 5250
+$Comp
+L Device:C C3
+U 1 1 5C92E6F6
+P 5250 4850
+F 0 "C3" V 5450 4800 50  0000 L CNN
+F 1 "10µF" V 5350 4750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 5288 4700 50  0001 C CNN
+F 3 "~" H 5250 4850 50  0001 C CNN
+	1    5250 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5C9AD29B
+P 5250 5600
+F 0 "R4" H 5320 5646 50  0000 L CNN
+F 1 "1K" H 5320 5555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5180 5600 50  0001 C CNN
+F 3 "~" H 5250 5600 50  0001 C CNN
+F 4 "Yageo" H -900 650 50  0001 C CNN "Manufacturer"
+F 5 "RC0603JR-071K" H -900 650 50  0001 C CNN "Part No."
+	1    5250 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 5450 5250 5250
+Wire Wire Line
+	5250 5250 5450 5250
+Connection ~ 5250 5250
+Wire Wire Line
+	4550 4850 5100 4850
+Wire Wire Line
+	5400 4850 5950 4850
+Wire Wire Line
+	9950 5250 9950 2000
+Wire Wire Line
+	5250 5750 5250 5950
+Wire Wire Line
+	5950 4850 5950 5250
+Wire Notes Line
+	9650 3850 4550 3850
+$Comp
+L Power_Board:LMZ14203 U?
+U 1 1 5CB12DBA
+P 7150 2200
+AR Path="/5CB12DBA" Ref="U?"  Part="1" 
+AR Path="/5C93509D/5CB12DBA" Ref="U?"  Part="1" 
+AR Path="/5C958DBD/5C9BDDC9/5CB12DBA" Ref="U?"  Part="1" 
+AR Path="/5C958DBD/5CB12DBA" Ref="U?"  Part="1" 
+F 0 "U?" H 7150 2765 50  0000 C CNN
+F 1 "LMZ14203" H 7150 2674 50  0000 C CNN
+F 2 "" H 7150 2200 50  0001 C CNN
+F 3 "" H 7150 2200 50  0001 C CNN
+F 4 "TI" H 850 100 50  0001 C CNN "Manufacturer"
+F 5 "TO-PMOD 7" H 850 100 50  0001 C CNN "Package"
+F 6 "LMZ14203TZE-ADJ/NOPB" H 850 100 50  0001 C CNN "Part No."
+	1    7150 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB12DC0
+P 4850 3200
+AR Path="/5CB12DC0" Ref="#PWR?"  Part="1" 
+AR Path="/5C93509D/5CB12DC0" Ref="#PWR?"  Part="1" 
+AR Path="/5C958DBD/5C9BDDC9/5CB12DC0" Ref="#PWR?"  Part="1" 
+AR Path="/5C958DBD/5CB12DC0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4850 2950 50  0001 C CNN
+F 1 "GND" H 4855 3027 50  0000 C CNN
+F 2 "" H 4850 3200 50  0001 C CNN
+F 3 "" H 4850 3200 50  0001 C CNN
+	1    4850 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB12DC6
+P 5200 3200
+AR Path="/5CB12DC6" Ref="#PWR?"  Part="1" 
+AR Path="/5C93509D/5CB12DC6" Ref="#PWR?"  Part="1" 
+AR Path="/5C958DBD/5C9BDDC9/5CB12DC6" Ref="#PWR?"  Part="1" 
+AR Path="/5C958DBD/5CB12DC6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5200 2950 50  0001 C CNN
+F 1 "GND" H 5205 3027 50  0000 C CNN
+F 2 "" H 5200 3200 50  0001 C CNN
+F 3 "" H 5200 3200 50  0001 C CNN
+	1    5200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB12DCC
+P 5550 3200
+AR Path="/5CB12DCC" Ref="#PWR?"  Part="1" 
+AR Path="/5C93509D/5CB12DCC" Ref="#PWR?"  Part="1" 
+AR Path="/5C958DBD/5C9BDDC9/5CB12DCC" Ref="#PWR?"  Part="1" 
+AR Path="/5C958DBD/5CB12DCC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5550 2950 50  0001 C CNN
+F 1 "GND" H 5555 3027 50  0000 C CNN
+F 2 "" H 5550 3200 50  0001 C CNN
+F 3 "" H 5550 3200 50  0001 C CNN
+	1    5550 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB12DD2
+P 5850 3200
+AR Path="/5CB12DD2" Ref="#PWR?"  Part="1" 
+AR Path="/5C93509D/5CB12DD2" Ref="#PWR?"  Part="1" 
+AR Path="/5C958DBD/5C9BDDC9/5CB12DD2" Ref="#PWR?"  Part="1" 
+AR Path="/5C958DBD/5CB12DD2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5850 2950 50  0001 C CNN
+F 1 "GND" H 5855 3027 50  0000 C CNN
+F 2 "" H 5850 3200 50  0001 C CNN
+F 3 "" H 5850 3200 50  0001 C CNN
+	1    5850 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB12DD8
+P 7150 3200
+AR Path="/5CB12DD8" Ref="#PWR?"  Part="1" 
+AR Path="/5C93509D/5CB12DD8" Ref="#PWR?"  Part="1" 
+AR Path="/5C958DBD/5C9BDDC9/5CB12DD8" Ref="#PWR?"  Part="1" 
+AR Path="/5C958DBD/5CB12DD8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7150 2950 50  0001 C CNN
+F 1 "GND" H 7155 3027 50  0000 C CNN
+F 2 "" H 7150 3200 50  0001 C CNN
+F 3 "" H 7150 3200 50  0001 C CNN
+	1    7150 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB12DDE
+P 7850 3200
+AR Path="/5CB12DDE" Ref="#PWR?"  Part="1" 
+AR Path="/5C93509D/5CB12DDE" Ref="#PWR?"  Part="1" 
+AR Path="/5C958DBD/5C9BDDC9/5CB12DDE" Ref="#PWR?"  Part="1" 
+AR Path="/5C958DBD/5CB12DDE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7850 2950 50  0001 C CNN
+F 1 "GND" H 7855 3027 50  0000 C CNN
+F 2 "" H 7850 3200 50  0001 C CNN
+F 3 "" H 7850 3200 50  0001 C CNN
+	1    7850 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB12DE4
+P 8450 3200
+AR Path="/5CB12DE4" Ref="#PWR?"  Part="1" 
+AR Path="/5C93509D/5CB12DE4" Ref="#PWR?"  Part="1" 
+AR Path="/5C958DBD/5C9BDDC9/5CB12DE4" Ref="#PWR?"  Part="1" 
+AR Path="/5C958DBD/5CB12DE4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8450 2950 50  0001 C CNN
+F 1 "GND" H 8455 3027 50  0000 C CNN
+F 2 "" H 8450 3200 50  0001 C CNN
+F 3 "" H 8450 3200 50  0001 C CNN
+	1    8450 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB12DEA
+P 9050 3200
+AR Path="/5CB12DEA" Ref="#PWR?"  Part="1" 
+AR Path="/5C93509D/5CB12DEA" Ref="#PWR?"  Part="1" 
+AR Path="/5C958DBD/5C9BDDC9/5CB12DEA" Ref="#PWR?"  Part="1" 
+AR Path="/5C958DBD/5CB12DEA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9050 2950 50  0001 C CNN
+F 1 "GND" H 9055 3027 50  0000 C CNN
+F 2 "" H 9050 3200 50  0001 C CNN
+F 3 "" H 9050 3200 50  0001 C CNN
+	1    9050 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB12DF0
+P 9350 3200
+AR Path="/5CB12DF0" Ref="#PWR?"  Part="1" 
+AR Path="/5C93509D/5CB12DF0" Ref="#PWR?"  Part="1" 
+AR Path="/5C958DBD/5C9BDDC9/5CB12DF0" Ref="#PWR?"  Part="1" 
+AR Path="/5C958DBD/5CB12DF0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9350 2950 50  0001 C CNN
+F 1 "GND" H 9355 3027 50  0000 C CNN
+F 2 "" H 9350 3200 50  0001 C CNN
+F 3 "" H 9350 3200 50  0001 C CNN
+	1    9350 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CB12DF6
+P 5200 2300
+AR Path="/5CB12DF6" Ref="C?"  Part="1" 
+AR Path="/5C93509D/5CB12DF6" Ref="C?"  Part="1" 
+AR Path="/5C958DBD/5C9BDDC9/5CB12DF6" Ref="C?"  Part="1" 
+AR Path="/5C958DBD/5CB12DF6" Ref="C?"  Part="1" 
+F 0 "C?" H 5250 2400 50  0000 L CNN
+F 1 "10µF" H 5250 2200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 5238 2150 50  0001 C CNN
+F 3 "~" H 5200 2300 50  0001 C CNN
+	1    5200 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CB12E00
+P 5550 2300
+AR Path="/5CB12E00" Ref="C?"  Part="1" 
+AR Path="/5C93509D/5CB12E00" Ref="C?"  Part="1" 
+AR Path="/5C958DBD/5C9BDDC9/5CB12E00" Ref="C?"  Part="1" 
+AR Path="/5C958DBD/5CB12E00" Ref="C?"  Part="1" 
+F 0 "C?" H 5600 2400 50  0000 L CNN
+F 1 "1µF" H 5600 2200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5588 2150 50  0001 C CNN
+F 3 "https://www.niccomp.com/catalog/nmc2.pdf" H 5550 2300 50  0001 C CNN
+F 4 "0603" H 1250 50  50  0001 C CNN "Package"
+F 5 "NMC0805X7R105K25TRPLPF" H 1250 50  50  0001 C CNN "Part No."
+F 6 "not avail." H 1150 -1400 50  0001 C CNN "Digikey No."
+F 7 "NIC" H 1150 -1400 50  0001 C CNN "Manufacturer"
+	1    5550 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CB12E07
+P 7850 2850
+AR Path="/5CB12E07" Ref="C?"  Part="1" 
+AR Path="/5C93509D/5CB12E07" Ref="C?"  Part="1" 
+AR Path="/5C958DBD/5C9BDDC9/5CB12E07" Ref="C?"  Part="1" 
+AR Path="/5C958DBD/5CB12E07" Ref="C?"  Part="1" 
+F 0 "C?" H 7900 2950 50  0000 L CNN
+F 1 "10nF" H 7900 2750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7888 2700 50  0001 C CNN
+F 3 "~" H 7850 2850 50  0001 C CNN
+F 4 "0603" H 750 100 50  0001 C CNN "Package"
+	1    7850 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CB12E10
+P 8750 2300
+AR Path="/5CB12E10" Ref="C?"  Part="1" 
+AR Path="/5C93509D/5CB12E10" Ref="C?"  Part="1" 
+AR Path="/5C958DBD/5C9BDDC9/5CB12E10" Ref="C?"  Part="1" 
+AR Path="/5C958DBD/5CB12E10" Ref="C?"  Part="1" 
+F 0 "C?" H 8800 2400 50  0000 L CNN
+F 1 "22nF" H 8800 2200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8788 2150 50  0001 C CNN
+F 3 "~" H 8750 2300 50  0001 C CNN
+F 4 "490-1517-2-ND" H 750 -1400 50  0001 C CNN "Digikey No."
+F 5 "Murata" H 750 -1400 50  0001 C CNN "Manufacturer"
+F 6 "GRM188R71H223KA01D" H 750 -1400 50  0001 C CNN "Part No."
+	1    8750 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CB12E1A
+P 9050 2300
+AR Path="/5CB12E1A" Ref="C?"  Part="1" 
+AR Path="/5C93509D/5CB12E1A" Ref="C?"  Part="1" 
+AR Path="/5C958DBD/5C9BDDC9/5CB12E1A" Ref="C?"  Part="1" 
+AR Path="/5C958DBD/5CB12E1A" Ref="C?"  Part="1" 
+F 0 "C?" H 9100 2400 50  0000 L CNN
+F 1 "1µF" H 9100 2200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9088 2150 50  0001 C CNN
+F 3 "https://www.niccomp.com/catalog/nmc2.pdf" H 9050 2300 50  0001 C CNN
+F 4 "0603" H 750 50  50  0001 C CNN "Package"
+F 5 "NMC0805X7R105K25TRPLPF" H 750 50  50  0001 C CNN "Part No."
+F 6 "not avail." H 650 -1400 50  0001 C CNN "Digikey No."
+F 7 "NIC" H 650 -1400 50  0001 C CNN "Manufacturer"
+	1    9050 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CB12E23
+P 9350 2300
+AR Path="/5CB12E23" Ref="C?"  Part="1" 
+AR Path="/5C93509D/5CB12E23" Ref="C?"  Part="1" 
+AR Path="/5C958DBD/5C9BDDC9/5CB12E23" Ref="C?"  Part="1" 
+AR Path="/5C958DBD/5CB12E23" Ref="C?"  Part="1" 
+F 0 "C?" H 9400 2400 50  0000 L CNN
+F 1 "100µF" H 9400 2200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 9388 2150 50  0001 C CNN
+F 3 "~" H 9350 2300 50  0001 C CNN
+F 4 "587-5426-1-ND" H 550 -1400 50  0001 C CNN "Digikey No."
+F 5 "Taiyo Yuden" H 550 -1400 50  0001 C CNN "Manufacturer"
+F 6 "EMK325ABJ107MM-P" H 550 -1400 50  0001 C CNN "Part No."
+	1    9350 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5CB12E2C
+P 4850 2300
+AR Path="/5CB12E2C" Ref="C?"  Part="1" 
+AR Path="/5C93509D/5CB12E2C" Ref="C?"  Part="1" 
+AR Path="/5C958DBD/5C9BDDC9/5CB12E2C" Ref="C?"  Part="1" 
+AR Path="/5C958DBD/5CB12E2C" Ref="C?"  Part="1" 
+F 0 "C?" H 4900 2400 50  0000 L CNN
+F 1 "100µF" H 4900 2200 50  0000 L CNN
+F 2 "" H 4850 2300 50  0001 C CNN
+F 3 "https://search.kemet.com/component-edge/download/datasheet/EDK107M050A9MAA.pdf" H 4850 2300 50  0001 C CNN
+F 4 "399-6672-1-ND" H 1250 -1400 50  0001 C CNN "Digikey No."
+F 5 "Kemet" H 1250 -1400 50  0001 C CNN "Manufacturer"
+F 6 "EDK107M050A9MAA" H 1250 -1400 50  0001 C CNN "Part No."
+	1    4850 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB12E36
+P 8450 2850
+AR Path="/5CB12E36" Ref="R?"  Part="1" 
+AR Path="/5C93509D/5CB12E36" Ref="R?"  Part="1" 
+AR Path="/5C958DBD/5C9BDDC9/5CB12E36" Ref="R?"  Part="1" 
+AR Path="/5C958DBD/5CB12E36" Ref="R?"  Part="1" 
+F 0 "R?" H 8520 2896 50  0000 L CNN
+F 1 "1.07K 1%" H 8520 2805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8380 2850 50  0001 C CNN
+F 3 "~" H 8450 2850 50  0001 C CNN
+F 4 "0603" H 750 100 50  0001 C CNN "Package"
+F 5 "ERJ-3EKF1071V" H 750 100 50  0001 C CNN "Part No."
+F 6 "P1.07KHCT-ND" H 650 -1350 50  0001 C CNN "Digikey No."
+F 7 "Panasonic" H 650 -1350 50  0001 C CNN "Manufacturer"
+	1    8450 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB12E40
+P 8150 2300
+AR Path="/5CB12E40" Ref="R?"  Part="1" 
+AR Path="/5C93509D/5CB12E40" Ref="R?"  Part="1" 
+AR Path="/5C958DBD/5C9BDDC9/5CB12E40" Ref="R?"  Part="1" 
+AR Path="/5C958DBD/5CB12E40" Ref="R?"  Part="1" 
+F 0 "R?" H 8220 2346 50  0000 L CNN
+F 1 "5.90K 1%" H 8220 2255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 2300 50  0001 C CNN
+F 3 "~" H 8150 2300 50  0001 C CNN
+F 4 "0603" H 650 50  50  0001 C CNN "Package"
+F 5 "P5.90KHCT-ND" H 550 -1400 50  0001 C CNN "Digikey No."
+F 6 "Panasonic" H 550 -1400 50  0001 C CNN "Manufacturer"
+F 7 "ERJ-3EKF5901V" H 550 -1400 50  0001 C CNN "Part No."
+	1    8150 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB12E49
+P 5850 2900
+AR Path="/5CB12E49" Ref="R?"  Part="1" 
+AR Path="/5C93509D/5CB12E49" Ref="R?"  Part="1" 
+AR Path="/5C958DBD/5C9BDDC9/5CB12E49" Ref="R?"  Part="1" 
+AR Path="/5C958DBD/5CB12E49" Ref="R?"  Part="1" 
+F 0 "R?" H 5920 2946 50  0000 L CNN
+F 1 "6.8K" H 5920 2855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5780 2900 50  0001 C CNN
+F 3 "~" H 5850 2900 50  0001 C CNN
+F 4 "0603" H 1150 150 50  0001 C CNN "Package"
+F 5 "RC0603JR-076K8" H 1150 150 50  0001 C CNN "Part No."
+F 6 "Yageo" H 1050 -1300 50  0001 C CNN "Manufacturer"
+	1    5850 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB12E52
+P 6300 2200
+AR Path="/5CB12E52" Ref="R?"  Part="1" 
+AR Path="/5C93509D/5CB12E52" Ref="R?"  Part="1" 
+AR Path="/5C958DBD/5C9BDDC9/5CB12E52" Ref="R?"  Part="1" 
+AR Path="/5C958DBD/5CB12E52" Ref="R?"  Part="1" 
+F 0 "R?" V 6200 2200 50  0000 C CNN
+F 1 "120K" V 6400 2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6230 2200 50  0001 C CNN
+F 3 "~" H 6300 2200 50  0001 C CNN
+F 4 "0603" H 950 100 50  0001 C CNN "Package"
+F 5 "RC0603JR-07120K" H 950 100 50  0001 C CNN "Part No."
+F 6 "Yageo" H 850 -1350 50  0001 C CNN "Manufacturer"
+	1    6300 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CB12E5B
+P 5850 2300
+AR Path="/5CB12E5B" Ref="R?"  Part="1" 
+AR Path="/5C93509D/5CB12E5B" Ref="R?"  Part="1" 
+AR Path="/5C958DBD/5C9BDDC9/5CB12E5B" Ref="R?"  Part="1" 
+AR Path="/5C958DBD/5CB12E5B" Ref="R?"  Part="1" 
+F 0 "R?" H 5920 2346 50  0000 L CNN
+F 1 "68K" H 5920 2255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5780 2300 50  0001 C CNN
+F 3 "~" H 5850 2300 50  0001 C CNN
+F 4 "0603" H 1150 50  50  0001 C CNN "Package"
+F 5 "RC0603JR-0768K" H 1150 50  50  0001 C CNN "Part No."
+F 6 "Yageo" H 1050 -1400 50  0001 C CNN "Manufacturer"
+	1    5850 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 2150 5200 2000
+Wire Wire Line
+	5550 2150 5550 2000
+Wire Wire Line
+	6150 2200 6050 2200
+Wire Wire Line
+	6050 2200 6050 2000
+Wire Wire Line
+	4850 2450 4850 3200
+Wire Wire Line
+	5200 2450 5200 3200
+Wire Wire Line
+	5550 2450 5550 3200
+Wire Wire Line
+	6550 2200 6450 2200
+Wire Wire Line
+	5850 2450 5850 2600
+Connection ~ 5850 2600
+Wire Wire Line
+	5850 2600 5850 2750
+Wire Wire Line
+	5850 3050 5850 3200
+Wire Wire Line
+	7550 2000 7750 2000
+Wire Wire Line
+	9350 2000 9350 2150
+Wire Wire Line
+	8750 2450 8750 2600
+Wire Wire Line
+	8150 2600 8150 2450
+Wire Wire Line
+	8150 2600 7950 2600
+Wire Wire Line
+	7950 2600 7950 2200
+Wire Wire Line
+	7950 2200 7750 2200
+Wire Wire Line
+	7850 2400 7850 2700
+Wire Wire Line
+	8450 2700 8450 2600
+Wire Wire Line
+	7850 3000 7850 3200
+Wire Wire Line
+	8450 3200 8450 3000
+Wire Wire Line
+	9050 3200 9050 2450
+Wire Wire Line
+	9350 3200 9350 2450
+Wire Wire Line
+	6200 2400 6550 2400
+Wire Wire Line
+	5850 2600 6200 2600
+Wire Wire Line
+	6200 2600 6200 2400
+Wire Wire Line
+	7250 2800 7250 2900
+Wire Wire Line
+	7250 2900 7150 2900
+Wire Wire Line
+	7050 2900 7050 2800
+Wire Wire Line
+	7150 3200 7150 2900
+Connection ~ 7150 2900
+Wire Wire Line
+	7150 2900 7050 2900
+Connection ~ 8150 2600
+Wire Wire Line
+	6550 2000 6050 2000
+Connection ~ 5200 2000
+Connection ~ 5550 2000
+Connection ~ 5850 2000
+Wire Wire Line
+	5850 2000 5550 2000
+Connection ~ 6050 2000
+Wire Wire Line
+	6050 2000 5850 2000
+Wire Wire Line
+	7750 2400 7850 2400
+Connection ~ 8450 2600
+Wire Wire Line
+	8450 2600 8750 2600
+Wire Wire Line
+	8150 2600 8450 2600
+Wire Wire Line
+	7750 2000 8150 2000
+Connection ~ 7750 2000
+Connection ~ 8150 2000
+Wire Wire Line
+	8150 2000 8750 2000
+Connection ~ 8750 2000
+Wire Wire Line
+	8750 2000 9050 2000
+Connection ~ 9050 2000
+Wire Wire Line
+	8150 2150 8150 2000
+Wire Wire Line
+	8750 2150 8750 2000
+Wire Wire Line
+	9050 2150 9050 2000
+Wire Wire Line
+	4850 2000 4850 2150
+Wire Wire Line
+	5850 2000 5850 2150
+Connection ~ 9950 2000
+Wire Wire Line
+	5950 5250 9950 5250
+Wire Wire Line
+	9350 2000 9950 2000
+Wire Wire Line
+	5750 5250 5950 5250
+Wire Wire Line
+	9950 2000 10250 2000
+Wire Wire Line
+	9050 2000 9350 2000
+Connection ~ 9350 2000
+Connection ~ 5950 5250
+Wire Notes Line
+	9650 1200 9650 3850
+Wire Notes Line
+	4550 1200 4550 3850
+Text Notes 4650 1400 0    100  ~ 0
+Raspberry Pi Power
+Wire Notes Line
+	4550 1200 9650 1200
+Wire Notes Line
+	6250 4150 6250 6250
+Wire Wire Line
+	5200 2000 5550 2000
+Connection ~ 4850 2000
+Text Notes 880  5550 0    50   ~ 0
+Push to power on.\nPush to trigger soft power off.\nPush and hold to force power off.
+Text Notes 900  6100 0    50   ~ 0
+Drive low to power off.
+Text Notes 2400 1400 0    100  ~ 0
+Soft Power Switch
+Text HLabel 1450 2000 0    50   Input ~ 0
+Battery_Power
+Text HLabel 1550 5950 0    50   Input ~ 0
+Power_Ctl_GPIO
+$Comp
+L Power_Board:SI5504BDC Q1
+U 2 1 5C931E81
+P 4050 2000
+F 0 "Q1" V 4278 2000 50  0000 C CNN
+F 1 "SI5504BDC" V 4187 2000 50  0000 C CNN
+F 2 "" H 4050 2000 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/74483/si5504bdc.pdf" H 4050 2000 50  0001 C CNN
+F 4 "SI5504BDC-T1-GE3CT-ND" H -1900 -950 50  0001 C CNN "Digikey No."
+F 5 "Vishay" H -1900 -950 50  0001 C CNN "Manufacturer"
+F 6 "SI5504BDC-T1-GE3" H -1900 -950 50  0001 C CNN "Part No."
+	2    4050 2000
+	0    1    -1   0   
+$EndComp
+$Comp
+L Power_Board:SI5504BDC Q1
+U 1 1 5C930F5F
+P 4050 5250
+F 0 "Q1" H 3850 5400 50  0000 L CNN
+F 1 "SI5504BDC" H 3600 5100 50  0000 L CNN
+F 2 "" H 4050 5250 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/74483/si5504bdc.pdf" H 4050 5250 50  0001 C CNN
+F 4 "SI5504BDC-T1-GE3CT-ND" H -1700 1200 50  0001 C CNN "Digikey No."
+F 5 "Vishay" H -1700 1200 50  0001 C CNN "Manufacturer"
+F 6 "SI5504BDC-T1-GE3" H -1700 1200 50  0001 C CNN "Part No."
+	1    4050 5250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5C92C0AF
+P 4050 5550
+F 0 "#PWR04" H 4050 5300 50  0001 C CNN
+F 1 "GND" H 4055 5377 50  0000 C CNN
+F 2 "" H 4050 5550 50  0001 C CNN
+F 3 "" H 4050 5550 50  0001 C CNN
+	1    4050 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:BAT54C D1
+U 1 1 5C92C678
+P 3450 5250
+F 0 "D1" V 3404 5338 50  0000 L CNN
+F 1 "BAT54C" V 3495 5338 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3525 5375 50  0001 L CNN
+F 3 "https://www.diodes.com/_files/datasheets/ds11005.pdf" H 3370 5250 50  0001 C CNN
+F 4 "BAT54CCT-ND" H -1700 900 50  0001 C CNN "Digikey No."
+F 5 "Diodes Inc." H -1700 900 50  0001 C CNN "Manufacturer"
+F 6 "BAT54CTA" H -1700 900 50  0001 C CNN "Part No."
+	1    3450 5250
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 5C92D6D2
-P 3600 3150
-F 0 "R1" H 3670 3196 50  0000 L CNN
-F 1 "10K" H 3670 3105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3530 3150 50  0001 C CNN
-F 3 "~" H 3600 3150 50  0001 C CNN
-F 4 "Yageo" H -850 -150 50  0001 C CNN "Manufacturer"
-F 5 "RC0603JR-0710K" H -850 -150 50  0001 C CNN "Part No."
-	1    3600 3150
+P 2650 2350
+F 0 "R1" H 2720 2396 50  0000 L CNN
+F 1 "10K" H 2720 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2580 2350 50  0001 C CNN
+F 3 "~" H 2650 2350 50  0001 C CNN
+F 4 "Yageo" H -1800 -950 50  0001 C CNN "Manufacturer"
+F 5 "RC0603JR-0710K" H -1800 -950 50  0001 C CNN "Part No."
+	1    2650 2350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R2
 U 1 1 5C92D963
-P 4300 3150
-F 0 "R2" H 4370 3196 50  0000 L CNN
-F 1 "100K" H 4370 3105 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4230 3150 50  0001 C CNN
-F 3 "~" H 4300 3150 50  0001 C CNN
-F 4 "Yageo" H -850 -150 50  0001 C CNN "Manufacturer"
-F 5 "RC0603JR-07100K" H -850 -150 50  0001 C CNN "Part No."
-	1    4300 3150
+P 3250 2350
+F 0 "R2" H 3320 2396 50  0000 L CNN
+F 1 "100K" H 3320 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3180 2350 50  0001 C CNN
+F 3 "~" H 3250 2350 50  0001 C CNN
+F 4 "Yageo" H -1900 -950 50  0001 C CNN "Manufacturer"
+F 5 "RC0603JR-07100K" H -1900 -950 50  0001 C CNN "Part No."
+	1    3250 2350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C1
 U 1 1 5C92DE19
-P 3950 3500
-F 0 "C1" V 3698 3500 50  0000 C CNN
-F 1 "1µF" V 3789 3500 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3988 3350 50  0001 C CNN
-F 3 "https://www.niccomp.com/catalog/nmc2.pdf" H 3950 3500 50  0001 C CNN
-F 4 "not avail." H -850 -150 50  0001 C CNN "Digikey No."
-F 5 "NIC" H -850 -150 50  0001 C CNN "Manufacturer"
-F 6 "NMC0805X7R105K25TRPLPF" H -850 -150 50  0001 C CNN "Part No."
-	1    3950 3500
+P 2950 2700
+F 0 "C1" V 2698 2700 50  0000 C CNN
+F 1 "1µF" V 2789 2700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2988 2550 50  0001 C CNN
+F 3 "https://www.niccomp.com/catalog/nmc2.pdf" H 2950 2700 50  0001 C CNN
+F 4 "not avail." H -1850 -950 50  0001 C CNN "Digikey No."
+F 5 "NIC" H -1850 -950 50  0001 C CNN "Manufacturer"
+F 6 "NMC0805X7R105K25TRPLPF" H -1850 -950 50  0001 C CNN "Part No."
+	1    2950 2700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7900 2800 7750 2800
+	3250 2200 3250 2000
 Wire Wire Line
-	4900 2800 4700 2800
+	3650 2200 3650 2000
 Wire Wire Line
-	3600 3000 3600 2800
+	3650 2500 3650 2700
 Wire Wire Line
-	3600 2800 2900 2800
+	3250 2500 3250 2700
 Wire Wire Line
-	4300 3000 4300 2800
-Connection ~ 4300 2800
+	4050 5050 4050 2700
 Wire Wire Line
-	4300 2800 3600 2800
+	4050 5550 4050 5450
 Wire Wire Line
-	2850 4600 3600 4600
-Wire Wire Line
-	3600 3300 3600 3500
-Connection ~ 3600 4600
-Wire Wire Line
-	3600 4600 4100 4600
-Wire Wire Line
-	4700 3000 4700 2800
-Connection ~ 4700 2800
-Wire Wire Line
-	4700 2800 4300 2800
-Wire Wire Line
-	4700 3300 4700 3500
-Wire Wire Line
-	5100 3500 5100 3100
-Wire Wire Line
-	4700 3500 4300 3500
-Connection ~ 4700 3500
-Wire Wire Line
-	3800 3500 3600 3500
-Wire Wire Line
-	3600 3500 3600 4600
-Wire Wire Line
-	4300 3300 4300 3500
-Connection ~ 4300 3500
-Wire Wire Line
-	4300 3500 4100 3500
-Wire Wire Line
-	5100 4400 5100 3500
-Wire Wire Line
-	5100 4900 5100 4800
-Wire Wire Line
-	4300 4300 4300 3900
-Wire Wire Line
-	4300 3900 3050 3900
-Text HLabel 3050 3900 0    50   Output ~ 0
+	3450 4950 3450 4550
+Text HLabel 1650 4550 0    50   Output ~ 0
 Power_Sense_GPIO
-Connection ~ 3600 2800
-Text Notes 2295 4050 0    50   ~ 0
+Text Notes 895  4700 0    50   ~ 0
 Low when button pressed.
-Wire Wire Line
-	6000 4600 6150 4600
-$Comp
-L Device:C C3
-U 1 1 5C92E6F6
-P 6150 4200
-F 0 "C3" V 6350 4150 50  0000 L CNN
-F 1 "10µF" V 6250 4100 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric" H 6188 4050 50  0001 C CNN
-F 3 "~" H 6150 4200 50  0001 C CNN
-	1    6150 4200
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Device:C C2
 U 1 1 5C92E455
-P 4700 3150
-F 0 "C2" H 4815 3196 50  0000 L CNN
-F 1 "100nF" H 4815 3105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4738 3000 50  0001 C CNN
-F 3 "~" H 4700 3150 50  0001 C CNN
-F 4 "Murata" H -850 -150 50  0001 C CNN "Manufacturer"
-F 5 "GRM188R71C104KA01D" H -850 -150 50  0001 C CNN "Part No."
-	1    4700 3150
+P 3650 2350
+F 0 "C2" H 3765 2396 50  0000 L CNN
+F 1 "100nF" H 3765 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3688 2200 50  0001 C CNN
+F 3 "~" H 3650 2350 50  0001 C CNN
+F 4 "Murata" H -1900 -950 50  0001 C CNN "Manufacturer"
+F 5 "GRM188R71C104KA01D" H -1900 -950 50  0001 C CNN "Part No."
+	1    3650 2350
 	1    0    0    -1  
 $EndComp
-Text HLabel 2850 4600 0    50   Input ~ 0
+Text HLabel 1450 5250 0    50   Input ~ 0
 Power_Button
-$Comp
-L Device:R R4
-U 1 1 5C9AD29B
-P 6150 4950
-F 0 "R4" H 6220 4996 50  0000 L CNN
-F 1 "1K" H 6220 4905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6080 4950 50  0001 C CNN
-F 3 "~" H 6150 4950 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "RC0603JR-071K" H 0   0   50  0001 C CNN "Part No."
-	1    6150 4950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	6150 4800 6150 4600
+	3450 5550 3450 5950
+Connection ~ 3450 5950
 Wire Wire Line
-	4300 5300 2950 5300
-$Sheet
-S 5500 2500 1350 1000
-U 5C9BDDC9
-F0 "Pi_Power" 50
-F1 "Pi_Power.sch" 50
-F2 "Battery_Power" I L 5500 2800 50 
-F3 "5.1V_unswitched" O R 6850 2800 50 
-$EndSheet
+	1450 5250 2650 5250
 Wire Wire Line
-	5300 2800 5500 2800
+	2800 2700 2650 2700
+Connection ~ 3250 2000
+Connection ~ 3250 2700
 Wire Wire Line
-	6150 4600 6350 4600
-Connection ~ 6150 4600
+	3250 2700 3100 2700
+Connection ~ 3650 2000
+Connection ~ 3650 2700
 Wire Wire Line
-	5500 4600 5500 4200
+	3650 2000 3850 2000
 Wire Wire Line
-	5500 4200 6000 4200
+	3650 2700 4050 2700
 Wire Wire Line
-	6300 4200 6850 4200
+	3450 4550 1650 4550
 Wire Wire Line
-	7250 4600 7250 2800
+	2650 2700 2650 5250
+Wire Notes Line
+	4350 1200 4350 4150
+Wire Notes Line
+	4350 4150 6250 4150
+Wire Notes Line
+	6250 6250 2350 6250
+Wire Notes Line
+	2350 6250 2350 1200
+Wire Notes Line
+	2350 1200 4350 1200
 Wire Wire Line
-	5400 4600 5500 4600
-Connection ~ 5500 4600
+	1450 2000 2650 2000
 Wire Wire Line
-	5500 4600 5700 4600
+	2650 2200 2650 2000
+Connection ~ 2650 2000
 Wire Wire Line
-	4300 4900 4300 5300
+	2650 2000 3250 2000
 Wire Wire Line
-	6150 5300 4300 5300
-Connection ~ 4300 5300
+	2650 2500 2650 2700
 Wire Wire Line
-	6150 5100 6150 5300
+	1550 5950 3450 5950
+Connection ~ 2650 2700
 Wire Wire Line
-	7250 4600 6850 4600
+	3250 5250 2650 5250
+Connection ~ 2650 5250
 Wire Wire Line
-	6850 4200 6850 4600
+	4850 2000 4250 2000
 Wire Wire Line
-	6850 4600 6650 4600
-Connection ~ 6850 4600
-Connection ~ 3600 3500
+	3450 2000 3650 2000
 Wire Wire Line
-	6750 2800 7250 2800
+	3450 2700 3650 2700
 Wire Wire Line
-	8200 2800 8450 2800
+	3250 2000 3650 2000
 Wire Wire Line
-	8450 3000 8450 2800
+	3250 2700 3650 2700
 Wire Wire Line
-	8450 3300 8450 3500
+	4850 2000 5200 2000
 Wire Wire Line
-	8450 3800 8450 4950
-$Comp
-L power:GND #PWR05
-U 1 1 5C9A2FAE
-P 8450 4950
-F 0 "#PWR05" H 8450 4700 50  0001 C CNN
-F 1 "GND" H 8455 4777 50  0000 C CNN
-F 2 "" H 8450 4950 50  0001 C CNN
-F 3 "" H 8450 4950 50  0001 C CNN
-	1    8450 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 5C9A1C10
-P 8450 3650
-F 0 "R6" H 8520 3696 50  0000 L CNN
-F 1 "680" H 8520 3605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8380 3650 50  0001 C CNN
-F 3 "~" H 8450 3650 50  0001 C CNN
-F 4 "Yageo" H 1050 -150 50  0001 C CNN "Manufacturer"
-F 5 "RC0603JR-07680R" H 1050 -150 50  0001 C CNN "Part No."
-	1    8450 3650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D2
-U 1 1 5C99D247
-P 8450 3150
-F 0 "D2" V 8489 3033 50  0000 R CNN
-F 1 "LED, green" V 8398 3033 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 8450 3150 50  0001 C CNN
-F 3 "~" H 8450 3150 50  0001 C CNN
-F 4 "Osram" H 1050 -150 50  0001 C CNN "Manufacturer"
-F 5 "LG Q971-KN-1" H 1050 -150 50  0001 C CNN "Part No."
-	1    8450 3150
-	0    -1   -1   0   
-$EndComp
-Connection ~ 8450 2800
+	3450 5950 5250 5950
 Wire Wire Line
-	8450 2800 8800 2800
+	4750 5250 4550 5250
 Wire Wire Line
-	7550 2800 7250 2800
-Connection ~ 7250 2800
-Connection ~ 5100 3500
+	4550 5250 4550 4850
+Connection ~ 4550 5250
 Wire Wire Line
-	4700 3500 5100 3500
+	4550 5250 4350 5250
+Wire Wire Line
+	4050 2300 4050 2700
+Connection ~ 4050 2700
 $EndSCHEMATC

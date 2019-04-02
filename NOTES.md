@@ -1,6 +1,37 @@
+# Raspberry Pi
+
+## Configuration for soft power switch
+
+In `/boot/config.txt`:
+    # BEGIN kbob 2019-03-25 configure soft power GPIO
+    dtoverlay=gpio-shutdown,gpio_pin=17,active_low=1,gpio_pull=up
+    dtoverlay=gpio-poweroff,gpiopin=4,active_low=1,export=1
+    # END kbob 2019-03-25
+
+Some of those parameters are probably not needed.
+
+
 # Power Board
 
 ## Power Board v0.3
+
+### Capacitor Substitutions
+
+Some of the caps I specified are not available.
+
+Specifically, Digikey is out of these two.
+
+    445-8047-1-ND     47uF 25V 1206
+    490-1517-2-ND   0.22uF 50V 0603
+
+And I incorrectly specified some 15V caps for components that are
+expected to see 17V.
+
+And Digikey does not carry NIC caps.
+
+And it has been suggested that I use electrolytic caps instead
+of some of these.
+
 
 ### Calculate LMZ14203 Parameters
 

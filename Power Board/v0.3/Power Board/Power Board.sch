@@ -74,18 +74,6 @@ F 3 "" H 1850 2100 50  0001 C CNN
 	1    1850 2100
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 5400 1600 1500 1100
-U 5C9A7F1E
-F0 "Panel Power" 50
-F1 "Panel_Power.sch" 50
-F2 "Battery_Power" I L 5400 1900 50 
-F3 "Enable" I L 5400 2300 50 
-F4 "PMBUS_SCL" B R 6900 2400 50 
-F5 "PMBUS_SDA" B R 6900 2300 50 
-F6 "Panel_Power" O R 6900 1900 50 
-F7 "Alert" O R 6900 2500 50 
-$EndSheet
 Wire Wire Line
 	2200 1900 2200 4300
 Connection ~ 1500 1900
@@ -135,24 +123,22 @@ F 6 "70553-0005" H -750 350 50  0001 C CNN "Part No."
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8850 4300 8100 4300
+	8850 4300 8500 4300
 Wire Wire Line
-	8850 4400 8300 4400
+	8850 4400 8200 4400
 Wire Wire Line
-	8300 4400 8300 5050
+	8200 4400 8200 5050
 $Comp
 L power:GND #PWR05
 U 1 1 5C99AE97
-P 8300 5050
-F 0 "#PWR05" H 8300 4800 50  0001 C CNN
-F 1 "GND" H 8305 4877 50  0000 C CNN
-F 2 "" H 8300 5050 50  0001 C CNN
-F 3 "" H 8300 5050 50  0001 C CNN
-	1    8300 5050
+P 8200 5050
+F 0 "#PWR05" H 8200 4800 50  0001 C CNN
+F 1 "GND" H 8205 4877 50  0000 C CNN
+F 2 "" H 8200 5050 50  0001 C CNN
+F 3 "" H 8200 5050 50  0001 C CNN
+	1    8200 5050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5000 4300 4100 4300
 Wire Wire Line
 	2600 4300 2200 4300
 Wire Wire Line
@@ -169,39 +155,23 @@ F5 "5.2V_switched" O R 4100 4300 50
 F6 "Battery_Power" I L 2600 4300 50 
 $EndSheet
 Wire Wire Line
-	5000 4300 5000 2300
-Wire Wire Line
-	5000 2300 5400 2300
-Wire Wire Line
-	6900 2300 7550 2300
-Wire Wire Line
-	7550 2300 7550 4500
-Wire Wire Line
-	7450 4600 7450 2400
+	4900 4300 4900 2300
 $Comp
 L Device:L_Core_Ferrite_Small L?
 U 1 1 5CC268DC
-P 8000 4300
+P 8400 4300
 AR Path="/5C958DBD/5CC268DC" Ref="L?"  Part="1" 
-AR Path="/5CC268DC" Ref="L1"  Part="1" 
-F 0 "L1" V 8100 4300 50  0000 C CNN
-F 1 "300R" V 7900 4300 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 8000 4300 50  0001 C CNN
-F 3 "https://www.niccomp.com/catalog/ncbh.pdf" H 8000 4300 50  0001 C CNN
-F 4 "not avail." H 750 1350 50  0001 C CNN "Digikey No."
-F 5 "NIC" H 750 1350 50  0001 C CNN "Manufacturer"
-F 6 "NCB-H0603R301TR100F" H 750 1350 50  0001 C CNN "Part No."
-	1    8000 4300
+AR Path="/5CC268DC" Ref="L7"  Part="1" 
+F 0 "L7" V 8600 4300 50  0000 C CNN
+F 1 "70R" V 8500 4300 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 4300 50  0001 C CNN
+F 3 "~" H 8400 4300 50  0001 C CNN
+F 4 "Murata" H 1150 1350 50  0001 C CNN "Manufacturer"
+F 5 " BLM18SG700TN1D " H 1150 1350 50  0001 C CNN "Part No."
+F 6 "490-5224-1-ND" H 400 0   50  0001 C CNN "Digikey No."
+	1    8400 4300
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	8850 4700 4100 4700
-Wire Wire Line
-	4100 4800 8850 4800
-Wire Wire Line
-	7450 4600 8850 4600
-Wire Wire Line
-	8850 4500 7550 4500
 Text Label 8850 4300 2    50   ~ 0
 +5.2V
 Text Label 8850 4400 2    50   ~ 0
@@ -214,10 +184,6 @@ Text Label 8850 4700 2    50   ~ 0
 Power_Ctl
 Text Label 8850 4800 2    50   ~ 0
 Power_Sense
-Wire Wire Line
-	7450 2400 6900 2400
-Wire Wire Line
-	7900 4300 5000 4300
 Wire Wire Line
 	2000 6350 2000 6150
 Wire Wire Line
@@ -249,6 +215,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1930 7000 50  0
 F 3 "~" H 2000 7000 50  0001 C CNN
 F 4 "Yageo" H -5400 3200 50  0001 C CNN "Manufacturer"
 F 5 "RC0603JR-07680R" H -5400 3200 50  0001 C CNN "Part No."
+F 6 "-" H 0   0   50  0001 C CNN "Digikey No."
 	1    2000 7000
 	1    0    0    -1  
 $EndComp
@@ -264,6 +231,7 @@ F 2 "LED_SMD:LED_0603_1608Metric" H 2000 6500 50  0001 C CNN
 F 3 "~" H 2000 6500 50  0001 C CNN
 F 4 "Osram" H -5400 3200 50  0001 C CNN "Manufacturer"
 F 5 "LG Q971-KN-1" H -5400 3200 50  0001 C CNN "Part No."
+F 6 "-" H 0   0   50  0001 C CNN "Digikey No."
 	1    2000 6500
 	0    -1   -1   0   
 $EndComp
@@ -271,10 +239,6 @@ Text Label 4150 4300 0    50   ~ 0
 5.2V_switched
 Text Label 1550 1900 0    50   ~ 0
 Battery_Power
-Wire Wire Line
-	6900 1900 7950 1900
-Text Label 6950 1900 0    50   ~ 0
-Panel_Power
 Wire Wire Line
 	2800 6350 2800 5950
 Wire Wire Line
@@ -306,6 +270,7 @@ F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2730 7000 50  0
 F 3 "~" H 2800 7000 50  0001 C CNN
 F 4 "Yageo" H -4600 3200 50  0001 C CNN "Manufacturer"
 F 5 "RC0603JR-07680R" H -4600 3200 50  0001 C CNN "Part No."
+F 6 "-" H 0   0   50  0001 C CNN "Digikey No."
 	1    2800 7000
 	1    0    0    -1  
 $EndComp
@@ -321,6 +286,7 @@ F 2 "LED_SMD:LED_0603_1608Metric" H 2800 6500 50  0001 C CNN
 F 3 "~" H 2800 6500 50  0001 C CNN
 F 4 "Osram" H -4600 3200 50  0001 C CNN "Manufacturer"
 F 5 "LB Q39G-L2N2-35-1" H -4600 3200 50  0001 C CNN "Part No."
+F 6 "-" H 0   0   50  0001 C CNN "Digikey No."
 	1    2800 6500
 	0    -1   -1   0   
 $EndComp
@@ -457,142 +423,276 @@ F 3 "" H 8650 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8850 1900 8450 1900
+	8850 1900 8500 1900
 Wire Wire Line
-	8850 3400 8450 3400
+	8850 3400 8500 3400
 $Comp
 L Device:Fuse F1
 U 1 1 5C9C37E0
-P 8300 1900
-F 0 "F1" V 8103 1900 50  0000 C CNN
-F 1 "Fuse" V 8194 1900 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" V 8230 1900 50  0001 C CNN
-F 3 "~" H 8300 1900 50  0001 C CNN
-F 4 "F9967CT-ND" H -50 450 50  0001 C CNN "Digikey No."
-F 5 "Littelfuse" H -50 450 50  0001 C CNN "Manufacturer"
-F 6 "NANOSMD400LR-C-2" H -50 450 50  0001 C CNN "Part No."
-	1    8300 1900
+P 8050 1900
+F 0 "F1" V 7853 1900 50  0000 C CNN
+F 1 "Fuse" V 7944 1900 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" V 7980 1900 50  0001 C CNN
+F 3 "~" H 8050 1900 50  0001 C CNN
+F 4 "F9967CT-ND" H -300 450 50  0001 C CNN "Digikey No."
+F 5 "Littelfuse" H -300 450 50  0001 C CNN "Manufacturer"
+F 6 "NANOSMD400LR-C-2" H -300 450 50  0001 C CNN "Part No."
+	1    8050 1900
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:Fuse F2
 U 1 1 5C9C52D9
-P 8300 2200
-F 0 "F2" V 8103 2200 50  0000 C CNN
-F 1 "Fuse" V 8194 2200 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" V 8230 2200 50  0001 C CNN
-F 3 "~" H 8300 2200 50  0001 C CNN
-F 4 "F9967CT-ND" H -50 750 50  0001 C CNN "Digikey No."
-F 5 "Littelfuse" H -50 750 50  0001 C CNN "Manufacturer"
-F 6 "NANOSMD400LR-C-2" H -50 750 50  0001 C CNN "Part No."
-	1    8300 2200
+P 8050 2200
+F 0 "F2" V 7853 2200 50  0000 C CNN
+F 1 "Fuse" V 7944 2200 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" V 7980 2200 50  0001 C CNN
+F 3 "~" H 8050 2200 50  0001 C CNN
+F 4 "F9967CT-ND" H -300 750 50  0001 C CNN "Digikey No."
+F 5 "Littelfuse" H -300 750 50  0001 C CNN "Manufacturer"
+F 6 "NANOSMD400LR-C-2" H -300 750 50  0001 C CNN "Part No."
+	1    8050 2200
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:Fuse F3
 U 1 1 5C9C55BE
-P 8300 2500
-F 0 "F3" V 8103 2500 50  0000 C CNN
-F 1 "Fuse" V 8194 2500 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" V 8230 2500 50  0001 C CNN
-F 3 "~" H 8300 2500 50  0001 C CNN
-F 4 "F9967CT-ND" H -50 1050 50  0001 C CNN "Digikey No."
-F 5 "Littelfuse" H -50 1050 50  0001 C CNN "Manufacturer"
-F 6 "NANOSMD400LR-C-2" H -50 1050 50  0001 C CNN "Part No."
-	1    8300 2500
+P 8050 2500
+F 0 "F3" V 7853 2500 50  0000 C CNN
+F 1 "Fuse" V 7944 2500 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" V 7980 2500 50  0001 C CNN
+F 3 "~" H 8050 2500 50  0001 C CNN
+F 4 "F9967CT-ND" H -300 1050 50  0001 C CNN "Digikey No."
+F 5 "Littelfuse" H -300 1050 50  0001 C CNN "Manufacturer"
+F 6 "NANOSMD400LR-C-2" H -300 1050 50  0001 C CNN "Part No."
+	1    8050 2500
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:Fuse F4
 U 1 1 5C9C569F
-P 8300 2800
-F 0 "F4" V 8103 2800 50  0000 C CNN
-F 1 "Fuse" V 8194 2800 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" V 8230 2800 50  0001 C CNN
-F 3 "~" H 8300 2800 50  0001 C CNN
-F 4 "F9967CT-ND" H -50 1350 50  0001 C CNN "Digikey No."
-F 5 "Littelfuse" H -50 1350 50  0001 C CNN "Manufacturer"
-F 6 "NANOSMD400LR-C-2" H -50 1350 50  0001 C CNN "Part No."
-	1    8300 2800
+P 8050 2800
+F 0 "F4" V 7853 2800 50  0000 C CNN
+F 1 "Fuse" V 7944 2800 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" V 7980 2800 50  0001 C CNN
+F 3 "~" H 8050 2800 50  0001 C CNN
+F 4 "F9967CT-ND" H -300 1350 50  0001 C CNN "Digikey No."
+F 5 "Littelfuse" H -300 1350 50  0001 C CNN "Manufacturer"
+F 6 "NANOSMD400LR-C-2" H -300 1350 50  0001 C CNN "Part No."
+	1    8050 2800
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:Fuse F5
 U 1 1 5C9C5780
-P 8300 3100
-F 0 "F5" V 8103 3100 50  0000 C CNN
-F 1 "Fuse" V 8194 3100 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" V 8230 3100 50  0001 C CNN
-F 3 "~" H 8300 3100 50  0001 C CNN
-F 4 "F9967CT-ND" H -50 1650 50  0001 C CNN "Digikey No."
-F 5 "Littelfuse" H -50 1650 50  0001 C CNN "Manufacturer"
-F 6 "NANOSMD400LR-C-2" H -50 1650 50  0001 C CNN "Part No."
-	1    8300 3100
+P 8050 3100
+F 0 "F5" V 7853 3100 50  0000 C CNN
+F 1 "Fuse" V 7944 3100 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" V 7980 3100 50  0001 C CNN
+F 3 "~" H 8050 3100 50  0001 C CNN
+F 4 "F9967CT-ND" H -300 1650 50  0001 C CNN "Digikey No."
+F 5 "Littelfuse" H -300 1650 50  0001 C CNN "Manufacturer"
+F 6 "NANOSMD400LR-C-2" H -300 1650 50  0001 C CNN "Part No."
+	1    8050 3100
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:Fuse F6
 U 1 1 5C9C5861
-P 8300 3400
-F 0 "F6" V 8103 3400 50  0000 C CNN
-F 1 "Fuse" V 8194 3400 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" V 8230 3400 50  0001 C CNN
-F 3 "~" H 8300 3400 50  0001 C CNN
-F 4 "F9967CT-ND" H -50 1950 50  0001 C CNN "Digikey No."
-F 5 "Littelfuse" H -50 1950 50  0001 C CNN "Manufacturer"
-F 6 "NANOSMD400LR-C-2" H -50 1950 50  0001 C CNN "Part No."
-	1    8300 3400
+P 8050 3400
+F 0 "F6" V 7853 3400 50  0000 C CNN
+F 1 "Fuse" V 7944 3400 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" V 7980 3400 50  0001 C CNN
+F 3 "~" H 8050 3400 50  0001 C CNN
+F 4 "F9967CT-ND" H -300 1950 50  0001 C CNN "Digikey No."
+F 5 "Littelfuse" H -300 1950 50  0001 C CNN "Manufacturer"
+F 6 "NANOSMD400LR-C-2" H -300 1950 50  0001 C CNN "Part No."
+	1    8050 3400
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8150 1900 7950 1900
+	7900 1900 7800 1900
 Wire Wire Line
-	7950 1900 7950 2200
+	7800 1900 7800 2200
 Wire Wire Line
-	7950 3400 8150 3400
-Wire Wire Line
-	1500 1900 2200 1900
+	7800 3400 7900 3400
 Connection ~ 2200 1900
 Wire Wire Line
-	2200 1900 5400 1900
+	8850 3100 8500 3100
 Wire Wire Line
-	8850 3100 8450 3100
+	8200 2800 8300 2800
 Wire Wire Line
-	8450 2800 8850 2800
+	8850 2500 8500 2500
 Wire Wire Line
-	8850 2500 8450 2500
+	8850 2200 8500 2200
 Wire Wire Line
-	8850 2200 8450 2200
+	7900 2200 7800 2200
+Connection ~ 7800 2200
 Wire Wire Line
-	8150 2200 7950 2200
-Connection ~ 7950 2200
+	7800 2200 7800 2500
 Wire Wire Line
-	7950 2200 7950 2500
+	7800 2500 7900 2500
+Connection ~ 7800 2500
 Wire Wire Line
-	7950 2500 8150 2500
-Connection ~ 7950 2500
+	7800 2500 7800 2800
 Wire Wire Line
-	7950 2500 7950 2800
+	7900 2800 7800 2800
+Connection ~ 7800 2800
 Wire Wire Line
-	8150 2800 7950 2800
-Connection ~ 7950 2800
+	7800 2800 7800 3100
 Wire Wire Line
-	7950 2800 7950 3100
+	7800 3100 7900 3100
+Connection ~ 7800 3100
 Wire Wire Line
-	7950 3100 8150 3100
-Connection ~ 7950 3100
-Wire Wire Line
-	7950 3100 7950 3400
-Connection ~ 7950 1900
-Connection ~ 5000 4300
+	7800 3100 7800 3400
+Connection ~ 4900 4300
 Text Notes 1000 1200 0    100  ~ 0
 Power Board
-Wire Wire Line
-	6900 2500 7350 2500
-Wire Wire Line
-	7350 2500 7350 4900
-Wire Wire Line
-	7350 4900 8850 4900
 Text Label 8850 4900 2    50   ~ 0
 Panel_Alert
+Connection ~ 7800 1900
+Wire Wire Line
+	4900 4300 4100 4300
+Wire Wire Line
+	1500 1900 2200 1900
+Wire Wire Line
+	7200 4900 8850 4900
+Wire Wire Line
+	7200 2500 7200 4900
+Wire Wire Line
+	6800 2500 7200 2500
+Wire Wire Line
+	2200 1900 5300 1900
+Text Label 6950 1900 0    50   ~ 0
+Panel_Power
+Wire Wire Line
+	6800 1900 7800 1900
+Wire Wire Line
+	8300 4300 4900 4300
+Wire Wire Line
+	7300 2400 6800 2400
+Wire Wire Line
+	8850 4500 7400 4500
+Wire Wire Line
+	7300 4600 8850 4600
+Wire Wire Line
+	4100 4800 8850 4800
+Wire Wire Line
+	8850 4700 4100 4700
+Wire Wire Line
+	7300 4600 7300 2400
+Wire Wire Line
+	7400 2300 7400 4500
+Wire Wire Line
+	6800 2300 7400 2300
+Wire Wire Line
+	4900 2300 5300 2300
+$Sheet
+S 5300 1600 1500 1100
+U 5C9A7F1E
+F0 "Panel Power" 50
+F1 "Panel_Power.sch" 50
+F2 "Battery_Power" I L 5300 1900 50 
+F3 "Enable" I L 5300 2300 50 
+F4 "PMBUS_SCL" B R 6800 2400 50 
+F5 "PMBUS_SDA" B R 6800 2300 50 
+F6 "Panel_Power" O R 6800 1900 50 
+F7 "Alert" O R 6800 2500 50 
+$EndSheet
+Wire Wire Line
+	8300 1900 8200 1900
+Wire Wire Line
+	8300 2200 8200 2200
+$Comp
+L Device:L_Core_Ferrite_Small L1
+U 1 1 5CA6BA0E
+P 8400 1900
+F 0 "L1" V 8605 1900 50  0000 C CNN
+F 1 "70R" V 8514 1900 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 1900 50  0001 C CNN
+F 3 "~" H 8400 1900 50  0001 C CNN
+F 4 "490-5224-1-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 " BLM18SG700TN1D " H 0   0   50  0001 C CNN "Part No."
+	1    8400 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L_Core_Ferrite_Small L2
+U 1 1 5CA7B064
+P 8400 2200
+F 0 "L2" V 8605 2200 50  0000 C CNN
+F 1 "70R" V 8514 2200 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 2200 50  0001 C CNN
+F 3 "~" H 8400 2200 50  0001 C CNN
+F 4 "490-5224-1-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 " BLM18SG700TN1D " H 0   0   50  0001 C CNN "Part No."
+	1    8400 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L_Core_Ferrite_Small L3
+U 1 1 5CA7CC63
+P 8400 2500
+F 0 "L3" V 8605 2500 50  0000 C CNN
+F 1 "70R" V 8514 2500 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 2500 50  0001 C CNN
+F 3 "~" H 8400 2500 50  0001 C CNN
+F 4 "490-5224-1-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 " BLM18SG700TN1D " H 0   0   50  0001 C CNN "Part No."
+	1    8400 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8300 2500 8200 2500
+$Comp
+L Device:L_Core_Ferrite_Small L4
+U 1 1 5CA7DCF6
+P 8400 2800
+F 0 "L4" V 8605 2800 50  0000 C CNN
+F 1 "70R" V 8514 2800 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 2800 50  0001 C CNN
+F 3 "~" H 8400 2800 50  0001 C CNN
+F 4 "490-5224-1-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 " BLM18SG700TN1D " H 0   0   50  0001 C CNN "Part No."
+	1    8400 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8500 2800 8850 2800
+$Comp
+L Device:L_Core_Ferrite_Small L5
+U 1 1 5CA7EB66
+P 8400 3100
+F 0 "L5" V 8605 3100 50  0000 C CNN
+F 1 "70R" V 8514 3100 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 3100 50  0001 C CNN
+F 3 "~" H 8400 3100 50  0001 C CNN
+F 4 "490-5224-1-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 " BLM18SG700TN1D " H 0   0   50  0001 C CNN "Part No."
+	1    8400 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8300 3100 8200 3100
+$Comp
+L Device:L_Core_Ferrite_Small L6
+U 1 1 5CA7F909
+P 8400 3400
+F 0 "L6" V 8605 3400 50  0000 C CNN
+F 1 "70R" V 8514 3400 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 3400 50  0001 C CNN
+F 3 "~" H 8400 3400 50  0001 C CNN
+F 4 "490-5224-1-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 " BLM18SG700TN1D " H 0   0   50  0001 C CNN "Part No."
+	1    8400 3400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8300 3400 8200 3400
 $EndSCHEMATC

@@ -29,7 +29,7 @@ PIN | Desc.        | Use
   9 | Ground       | Ground to IMU board
  10 | BCM 15/RXD   | (not used - reserved for serial console)
  11 | BCM 17       | Power Sense
- 12 | BCM 18/PWM0  | Power Alert
+ 12 | BCM 18/PWM0  | Power Alert (interrupt)
 
 
 # Power Board
@@ -185,3 +185,45 @@ All parameters are from WEBENCH.
      25 WM2512-ND               Molex           16-02-0103
      10 609-2380-ND             Amphenol ICC    69176-006LF
      50 609-4518-ND             Amphenol ICC    47745-001LF
+
+
+# References
+
+## These pages were useful.
+
+http://tech.mattmillman.com/info/crimpconnectors/
+
+http://www.mosaic-industries.com/embedded-systems/microcontroller-projects/raspberry-pi/on-off-power-controller
+
+http://www.mosaic-industries.com/embedded-systems/microcontroller-projects/electronic-circuits/push-button-switch-turn-on/latching-toggle-power-switch
+
+
+## George's big list of capacitor references
+
+### GeorgeIoak 2019-03-31T17:29:05.284Z
+
+Here's some good reading material I've saved links to over the years. I use Evernote to store web pages and info so here's some of what I've tagged. I don't mean to flood you with information but at the time I read these I felt they were good enough to save so I'm just sharing. Probably should create some web page and organize them but oh well. Would be nice to pull relevant info out of each and make 1 general reference page as I'm sure there is a ton of repeat information here.
+
+[muRata](https://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c39e.ashx)
+<br>
+[Analog Devices](https://www.analog.com/en/analog-dialogue/articles/ferrite-beads-demystified.html)
+<br>
+[TI](http://www.ti.com/lit/an/slva773/slva773.pdf)
+<br>
+[AVX](http://www.avx.com/docs/techinfo/SMPSCapacitors/Output_Filters.pdf)
+<br>
+[TI Blog](https://training.ti.com/sites/default/files/docs/measuring_output_noise.pdf)
+<br>
+[TI App Note](http://www.ti.com/lit/an/snva054c/snva054c.pdf)
+<br>
+[TI Analog Journal](http://www.ti.com/lit/an/slyt639/slyt639.pdf)
+<br>
+[TI Analog Engineer's Pocket Reference](https://www.dropbox.com/s/16wxvkue5hagz2q/Analog%20Engineer%E2%80%99s%20Pocket%20Reference.pdf?dl=0)
+<br>
+[AVX TAP/TEP Technical Summary and Application Guidelines](http://www.avx.com/docs/techinfo/TechSumAppGuide.pdf)
+<br>
+[Chris Reynolds - Parasitics & Capacitor Selection](https://www.planetanalog.com/author.asp?section_id=3245&doc_id=562601)
+<br>
+[TI Controlling Output Ripple](http://www.ti.com/lit/an/snva166a/snva166a.pdf)
+<br>
+[Maxim](https://www.maximintegrated.com/en/app-notes/index.mvp/id/5527),

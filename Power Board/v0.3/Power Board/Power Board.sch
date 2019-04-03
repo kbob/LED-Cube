@@ -15,20 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:Conn_01x02_Female J1
-U 1 1 5C9104AD
-P 1100 1900
-F 0 "J1" H 992 2085 50  0000 C CNN
-F 1 "Battery In" H 992 1994 50  0000 C CNN
-F 2 "~" H 1100 1900 50  0001 C CNN
-F 3 "https://www.molex.com/pdm_docs/sd/436500205_sd.pdf" H 1100 1900 50  0001 C CNN
-F 4 "WM17581-ND" H -650 -850 50  0001 C CNN "Digikey No."
-F 5 "Molex" H -650 -850 50  0001 C CNN "Manufacturer"
-F 6 "43650-0205" H -650 -850 50  0001 C CNN "Part No."
-	1    1100 1900
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:PWR_FLAG #FLG01
 U 1 1 5C912A06
 P 1500 1800
@@ -78,22 +64,6 @@ Wire Wire Line
 	2200 1900 2200 4300
 Connection ~ 1500 1900
 $Comp
-L Switch:SW_Push SW1
-U 1 1 5C990069
-P 1750 4700
-AR Path="/5C990069" Ref="SW1"  Part="1" 
-AR Path="/5C958DBD/5C990069" Ref="SW?"  Part="1" 
-F 0 "SW1" H 1750 4900 50  0000 C CNN
-F 1 "SW_Push" H 1750 4894 50  0001 C CNN
-F 2 "" H 1750 4900 50  0001 C CNN
-F 3 "~" H 1750 4900 50  0001 C CNN
-F 4 "CKN10053-ND" H -2000 350 50  0001 C CNN "Digikey No."
-F 5 "C&K" H -2000 350 50  0001 C CNN "Manufacturer"
-F 6 "PTS645VK39-2 LFS" H -2000 350 50  0001 C CNN "Part No."
-	1    1750 4700
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR01
 U 1 1 5C99610B
 P 1450 4800
@@ -108,20 +78,6 @@ Wire Wire Line
 	1550 4700 1450 4700
 Wire Wire Line
 	1450 4700 1450 4800
-$Comp
-L Connector_Generic:Conn_01x07 J8
-U 1 1 5C997D7E
-P 9050 4600
-F 0 "J8" H 9130 4592 50  0000 L CNN
-F 1 "Conn_01x06" H 9130 4501 50  0000 L CNN
-F 2 "" H 9050 4600 50  0001 C CNN
-F 3 "~" H 9050 4600 50  0001 C CNN
-F 4 "WM4904-ND" H -750 350 50  0001 C CNN "Digikey No."
-F 5 "Molex" H -750 350 50  0001 C CNN "Manufacturer"
-F 6 "70553-0005" H -750 350 50  0001 C CNN "Part No."
-	1    9050 4600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8850 4300 8500 4300
 Wire Wire Line
@@ -156,22 +112,6 @@ F6 "Battery_Power" I L 2600 4300 50
 $EndSheet
 Wire Wire Line
 	4900 4300 4900 2300
-$Comp
-L Device:L_Core_Ferrite_Small L?
-U 1 1 5CC268DC
-P 8400 4300
-AR Path="/5C958DBD/5CC268DC" Ref="L?"  Part="1" 
-AR Path="/5CC268DC" Ref="L7"  Part="1" 
-F 0 "L7" V 8600 4300 50  0000 C CNN
-F 1 "70R" V 8500 4300 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 4300 50  0001 C CNN
-F 3 "~" H 8400 4300 50  0001 C CNN
-F 4 "Murata" H 1150 1350 50  0001 C CNN "Manufacturer"
-F 5 " BLM18SG700TN1D " H 1150 1350 50  0001 C CNN "Part No."
-F 6 "490-5224-1-ND" H 400 0   50  0001 C CNN "Digikey No."
-	1    8400 4300
-	0    -1   -1   0   
-$EndComp
 Text Label 8850 4300 2    50   ~ 0
 +5.2V
 Text Label 8850 4400 2    50   ~ 0
@@ -203,38 +143,6 @@ F 3 "" H 2000 7350 50  0001 C CNN
 	1    2000 7350
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 5CC4DF29
-P 2000 7000
-AR Path="/5C958DBD/5CC4DF29" Ref="R?"  Part="1" 
-AR Path="/5CC4DF29" Ref="R1"  Part="1" 
-F 0 "R1" H 2070 7046 50  0000 L CNN
-F 1 "680" H 2070 6955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1930 7000 50  0001 C CNN
-F 3 "~" H 2000 7000 50  0001 C CNN
-F 4 "Yageo" H -5400 3200 50  0001 C CNN "Manufacturer"
-F 5 "RC0603JR-07680R" H -5400 3200 50  0001 C CNN "Part No."
-F 6 "-" H 0   0   50  0001 C CNN "Digikey No."
-	1    2000 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5CC4DF31
-P 2000 6500
-AR Path="/5C958DBD/5CC4DF31" Ref="D?"  Part="1" 
-AR Path="/5CC4DF31" Ref="D1"  Part="1" 
-F 0 "D1" V 2039 6383 50  0000 R CNN
-F 1 "LED, green" V 1948 6383 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 2000 6500 50  0001 C CNN
-F 3 "~" H 2000 6500 50  0001 C CNN
-F 4 "Osram" H -5400 3200 50  0001 C CNN "Manufacturer"
-F 5 "LG Q971-KN-1" H -5400 3200 50  0001 C CNN "Part No."
-F 6 "-" H 0   0   50  0001 C CNN "Digikey No."
-	1    2000 6500
-	0    -1   -1   0   
-$EndComp
 Text Label 4150 4300 0    50   ~ 0
 5.2V_switched
 Text Label 1550 1900 0    50   ~ 0
@@ -258,38 +166,6 @@ F 3 "" H 2800 7350 50  0001 C CNN
 	1    2800 7350
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 5C9C8474
-P 2800 7000
-AR Path="/5C958DBD/5C9C8474" Ref="R?"  Part="1" 
-AR Path="/5C9C8474" Ref="R2"  Part="1" 
-F 0 "R2" H 2870 7046 50  0000 L CNN
-F 1 "680" H 2870 6955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2730 7000 50  0001 C CNN
-F 3 "~" H 2800 7000 50  0001 C CNN
-F 4 "Yageo" H -4600 3200 50  0001 C CNN "Manufacturer"
-F 5 "RC0603JR-07680R" H -4600 3200 50  0001 C CNN "Part No."
-F 6 "-" H 0   0   50  0001 C CNN "Digikey No."
-	1    2800 7000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D?
-U 1 1 5C9C847C
-P 2800 6500
-AR Path="/5C958DBD/5C9C847C" Ref="D?"  Part="1" 
-AR Path="/5C9C847C" Ref="D2"  Part="1" 
-F 0 "D2" V 2839 6383 50  0000 R CNN
-F 1 "LED, blue" V 2748 6383 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 2800 6500 50  0001 C CNN
-F 3 "~" H 2800 6500 50  0001 C CNN
-F 4 "Osram" H -4600 3200 50  0001 C CNN "Manufacturer"
-F 5 "LB Q39G-L2N2-35-1" H -4600 3200 50  0001 C CNN "Part No."
-F 6 "-" H 0   0   50  0001 C CNN "Digikey No."
-	1    2800 6500
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	1200 6150 2000 6150
 Wire Wire Line
@@ -298,90 +174,6 @@ Text Label 1200 5950 0    50   ~ 0
 Panel_Power
 Text Label 1200 6150 0    50   ~ 0
 5.2V_switched
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5C9BB515
-P 9050 1900
-F 0 "J2" H 9130 1892 50  0000 L CNN
-F 1 "JST B2PS-VH" H 9130 1801 50  0000 L CNN
-F 2 "Connector_JST:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal" H 9050 1900 50  0001 C CNN
-F 3 "~" H 9050 1900 50  0001 C CNN
-F 4 "455-1648-ND" H -50 450 50  0001 C CNN "Digikey No."
-F 5 "JST" H -50 450 50  0001 C CNN "Manufacturer"
-F 6 "B2PS-VH(LF)(SN)" H -50 450 50  0001 C CNN "Part No."
-	1    9050 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5C9BD198
-P 9050 2200
-F 0 "J3" H 9130 2192 50  0000 L CNN
-F 1 "JST B2PS-VH" H 9130 2101 50  0000 L CNN
-F 2 "Connector_JST:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal" H 9050 2200 50  0001 C CNN
-F 3 "~" H 9050 2200 50  0001 C CNN
-F 4 "455-1648-ND" H -50 750 50  0001 C CNN "Digikey No."
-F 5 "JST" H -50 750 50  0001 C CNN "Manufacturer"
-F 6 "B2PS-VH(LF)(SN)" H -50 750 50  0001 C CNN "Part No."
-	1    9050 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J4
-U 1 1 5C9BD289
-P 9050 2500
-F 0 "J4" H 9130 2492 50  0000 L CNN
-F 1 "JST B2PS-VH" H 9130 2401 50  0000 L CNN
-F 2 "Connector_JST:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal" H 9050 2500 50  0001 C CNN
-F 3 "~" H 9050 2500 50  0001 C CNN
-F 4 "455-1648-ND" H -50 1050 50  0001 C CNN "Digikey No."
-F 5 "JST" H -50 1050 50  0001 C CNN "Manufacturer"
-F 6 "B2PS-VH(LF)(SN)" H -50 1050 50  0001 C CNN "Part No."
-	1    9050 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J5
-U 1 1 5C9BD37A
-P 9050 2800
-F 0 "J5" H 9130 2792 50  0000 L CNN
-F 1 "JST B2PS-VH" H 9130 2701 50  0000 L CNN
-F 2 "Connector_JST:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal" H 9050 2800 50  0001 C CNN
-F 3 "~" H 9050 2800 50  0001 C CNN
-F 4 "455-1648-ND" H -50 1350 50  0001 C CNN "Digikey No."
-F 5 "JST" H -50 1350 50  0001 C CNN "Manufacturer"
-F 6 "B2PS-VH(LF)(SN)" H -50 1350 50  0001 C CNN "Part No."
-	1    9050 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J6
-U 1 1 5C9BD4A3
-P 9050 3100
-F 0 "J6" H 9130 3092 50  0000 L CNN
-F 1 "JST B2PS-VH" H 9130 3001 50  0000 L CNN
-F 2 "Connector_JST:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal" H 9050 3100 50  0001 C CNN
-F 3 "~" H 9050 3100 50  0001 C CNN
-F 4 "455-1648-ND" H -50 1650 50  0001 C CNN "Digikey No."
-F 5 "JST" H -50 1650 50  0001 C CNN "Manufacturer"
-F 6 "B2PS-VH(LF)(SN)" H -50 1650 50  0001 C CNN "Part No."
-	1    9050 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J7
-U 1 1 5C9BD594
-P 9050 3400
-F 0 "J7" H 9130 3392 50  0000 L CNN
-F 1 "JST B2PS-VH" H 9130 3301 50  0000 L CNN
-F 2 "Connector_JST:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal" H 9050 3400 50  0001 C CNN
-F 3 "~" H 9050 3400 50  0001 C CNN
-F 4 "455-1648-ND" H -50 1950 50  0001 C CNN "Digikey No."
-F 5 "JST" H -50 1950 50  0001 C CNN "Manufacturer"
-F 6 "B2PS-VH(LF)(SN)" H -50 1950 50  0001 C CNN "Part No."
-	1    9050 3400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8850 2000 8650 2000
 Wire Wire Line
@@ -426,90 +218,6 @@ Wire Wire Line
 	8850 1900 8500 1900
 Wire Wire Line
 	8850 3400 8500 3400
-$Comp
-L Device:Fuse F1
-U 1 1 5C9C37E0
-P 8050 1900
-F 0 "F1" V 7853 1900 50  0000 C CNN
-F 1 "Fuse" V 7944 1900 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" V 7980 1900 50  0001 C CNN
-F 3 "~" H 8050 1900 50  0001 C CNN
-F 4 "F9967CT-ND" H -300 450 50  0001 C CNN "Digikey No."
-F 5 "Littelfuse" H -300 450 50  0001 C CNN "Manufacturer"
-F 6 "NANOSMD400LR-C-2" H -300 450 50  0001 C CNN "Part No."
-	1    8050 1900
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Fuse F2
-U 1 1 5C9C52D9
-P 8050 2200
-F 0 "F2" V 7853 2200 50  0000 C CNN
-F 1 "Fuse" V 7944 2200 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" V 7980 2200 50  0001 C CNN
-F 3 "~" H 8050 2200 50  0001 C CNN
-F 4 "F9967CT-ND" H -300 750 50  0001 C CNN "Digikey No."
-F 5 "Littelfuse" H -300 750 50  0001 C CNN "Manufacturer"
-F 6 "NANOSMD400LR-C-2" H -300 750 50  0001 C CNN "Part No."
-	1    8050 2200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Fuse F3
-U 1 1 5C9C55BE
-P 8050 2500
-F 0 "F3" V 7853 2500 50  0000 C CNN
-F 1 "Fuse" V 7944 2500 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" V 7980 2500 50  0001 C CNN
-F 3 "~" H 8050 2500 50  0001 C CNN
-F 4 "F9967CT-ND" H -300 1050 50  0001 C CNN "Digikey No."
-F 5 "Littelfuse" H -300 1050 50  0001 C CNN "Manufacturer"
-F 6 "NANOSMD400LR-C-2" H -300 1050 50  0001 C CNN "Part No."
-	1    8050 2500
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Fuse F4
-U 1 1 5C9C569F
-P 8050 2800
-F 0 "F4" V 7853 2800 50  0000 C CNN
-F 1 "Fuse" V 7944 2800 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" V 7980 2800 50  0001 C CNN
-F 3 "~" H 8050 2800 50  0001 C CNN
-F 4 "F9967CT-ND" H -300 1350 50  0001 C CNN "Digikey No."
-F 5 "Littelfuse" H -300 1350 50  0001 C CNN "Manufacturer"
-F 6 "NANOSMD400LR-C-2" H -300 1350 50  0001 C CNN "Part No."
-	1    8050 2800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Fuse F5
-U 1 1 5C9C5780
-P 8050 3100
-F 0 "F5" V 7853 3100 50  0000 C CNN
-F 1 "Fuse" V 7944 3100 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" V 7980 3100 50  0001 C CNN
-F 3 "~" H 8050 3100 50  0001 C CNN
-F 4 "F9967CT-ND" H -300 1650 50  0001 C CNN "Digikey No."
-F 5 "Littelfuse" H -300 1650 50  0001 C CNN "Manufacturer"
-F 6 "NANOSMD400LR-C-2" H -300 1650 50  0001 C CNN "Part No."
-	1    8050 3100
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Fuse F6
-U 1 1 5C9C5861
-P 8050 3400
-F 0 "F6" V 7853 3400 50  0000 C CNN
-F 1 "Fuse" V 7944 3400 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric" V 7980 3400 50  0001 C CNN
-F 3 "~" H 8050 3400 50  0001 C CNN
-F 4 "F9967CT-ND" H -300 1950 50  0001 C CNN "Digikey No."
-F 5 "Littelfuse" H -300 1950 50  0001 C CNN "Manufacturer"
-F 6 "NANOSMD400LR-C-2" H -300 1950 50  0001 C CNN "Part No."
-	1    8050 3400
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	7900 1900 7800 1900
 Wire Wire Line
@@ -603,18 +311,68 @@ Wire Wire Line
 	8300 1900 8200 1900
 Wire Wire Line
 	8300 2200 8200 2200
+Wire Wire Line
+	8300 2500 8200 2500
+Wire Wire Line
+	8500 2800 8850 2800
+Wire Wire Line
+	8300 3100 8200 3100
+Wire Wire Line
+	8300 3400 8200 3400
 $Comp
-L Device:L_Core_Ferrite_Small L1
-U 1 1 5CA6BA0E
-P 8400 1900
-F 0 "L1" V 8605 1900 50  0000 C CNN
-F 1 "70R" V 8514 1900 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 1900 50  0001 C CNN
-F 3 "~" H 8400 1900 50  0001 C CNN
+L Device:L_Core_Ferrite_Small L6
+U 1 1 5CA7F909
+P 8400 3400
+F 0 "L6" V 8605 3400 50  0000 C CNN
+F 1 "70R" V 8514 3400 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 3400 50  0001 C CNN
+F 3 "~" H 8400 3400 50  0001 C CNN
 F 4 "490-5224-1-ND" H 0   0   50  0001 C CNN "Digikey No."
 F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
 F 6 " BLM18SG700TN1D " H 0   0   50  0001 C CNN "Part No."
-	1    8400 1900
+	1    8400 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L_Core_Ferrite_Small L5
+U 1 1 5CA7EB66
+P 8400 3100
+F 0 "L5" V 8605 3100 50  0000 C CNN
+F 1 "70R" V 8514 3100 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 3100 50  0001 C CNN
+F 3 "~" H 8400 3100 50  0001 C CNN
+F 4 "490-5224-1-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 " BLM18SG700TN1D " H 0   0   50  0001 C CNN "Part No."
+	1    8400 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L_Core_Ferrite_Small L4
+U 1 1 5CA7DCF6
+P 8400 2800
+F 0 "L4" V 8605 2800 50  0000 C CNN
+F 1 "70R" V 8514 2800 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 2800 50  0001 C CNN
+F 3 "~" H 8400 2800 50  0001 C CNN
+F 4 "490-5224-1-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 " BLM18SG700TN1D " H 0   0   50  0001 C CNN "Part No."
+	1    8400 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L_Core_Ferrite_Small L3
+U 1 1 5CA7CC63
+P 8400 2500
+F 0 "L3" V 8605 2500 50  0000 C CNN
+F 1 "70R" V 8514 2500 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 2500 50  0001 C CNN
+F 3 "~" H 8400 2500 50  0001 C CNN
+F 4 "490-5224-1-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 " BLM18SG700TN1D " H 0   0   50  0001 C CNN "Part No."
+	1    8400 2500
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -632,67 +390,309 @@ F 6 " BLM18SG700TN1D " H 0   0   50  0001 C CNN "Part No."
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:L_Core_Ferrite_Small L3
-U 1 1 5CA7CC63
-P 8400 2500
-F 0 "L3" V 8605 2500 50  0000 C CNN
-F 1 "70R" V 8514 2500 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 2500 50  0001 C CNN
-F 3 "~" H 8400 2500 50  0001 C CNN
+L Device:L_Core_Ferrite_Small L1
+U 1 1 5CA6BA0E
+P 8400 1900
+F 0 "L1" V 8605 1900 50  0000 C CNN
+F 1 "70R" V 8514 1900 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 1900 50  0001 C CNN
+F 3 "~" H 8400 1900 50  0001 C CNN
 F 4 "490-5224-1-ND" H 0   0   50  0001 C CNN "Digikey No."
 F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
 F 6 " BLM18SG700TN1D " H 0   0   50  0001 C CNN "Part No."
-	1    8400 2500
+	1    8400 1900
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	8300 2500 8200 2500
 $Comp
-L Device:L_Core_Ferrite_Small L4
-U 1 1 5CA7DCF6
-P 8400 2800
-F 0 "L4" V 8605 2800 50  0000 C CNN
-F 1 "70R" V 8514 2800 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 2800 50  0001 C CNN
-F 3 "~" H 8400 2800 50  0001 C CNN
-F 4 "490-5224-1-ND" H 0   0   50  0001 C CNN "Digikey No."
-F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " BLM18SG700TN1D " H 0   0   50  0001 C CNN "Part No."
-	1    8400 2800
-	0    -1   -1   0   
+L Device:Fuse F6
+U 1 1 5C9C5861
+P 8050 3400
+F 0 "F6" V 7853 3400 50  0000 C CNN
+F 1 "Fuse" V 7944 3400 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" V 7980 3400 50  0001 C CNN
+F 3 "~" H 8050 3400 50  0001 C CNN
+F 4 "F9967CT-ND" H -300 1950 50  0001 C CNN "Digikey No."
+F 5 "Littelfuse" H -300 1950 50  0001 C CNN "Manufacturer"
+F 6 "NANOSMD400LR-C-2" H -300 1950 50  0001 C CNN "Part No."
+	1    8050 3400
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8500 2800 8850 2800
 $Comp
-L Device:L_Core_Ferrite_Small L5
-U 1 1 5CA7EB66
-P 8400 3100
-F 0 "L5" V 8605 3100 50  0000 C CNN
-F 1 "70R" V 8514 3100 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 3100 50  0001 C CNN
-F 3 "~" H 8400 3100 50  0001 C CNN
-F 4 "490-5224-1-ND" H 0   0   50  0001 C CNN "Digikey No."
-F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " BLM18SG700TN1D " H 0   0   50  0001 C CNN "Part No."
-	1    8400 3100
-	0    -1   -1   0   
+L Device:Fuse F5
+U 1 1 5C9C5780
+P 8050 3100
+F 0 "F5" V 7853 3100 50  0000 C CNN
+F 1 "Fuse" V 7944 3100 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" V 7980 3100 50  0001 C CNN
+F 3 "~" H 8050 3100 50  0001 C CNN
+F 4 "F9967CT-ND" H -300 1650 50  0001 C CNN "Digikey No."
+F 5 "Littelfuse" H -300 1650 50  0001 C CNN "Manufacturer"
+F 6 "NANOSMD400LR-C-2" H -300 1650 50  0001 C CNN "Part No."
+	1    8050 3100
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8300 3100 8200 3100
 $Comp
-L Device:L_Core_Ferrite_Small L6
-U 1 1 5CA7F909
-P 8400 3400
-F 0 "L6" V 8605 3400 50  0000 C CNN
-F 1 "70R" V 8514 3400 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 3400 50  0001 C CNN
-F 3 "~" H 8400 3400 50  0001 C CNN
-F 4 "490-5224-1-ND" H 0   0   50  0001 C CNN "Digikey No."
-F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " BLM18SG700TN1D " H 0   0   50  0001 C CNN "Part No."
-	1    8400 3400
+L Device:Fuse F4
+U 1 1 5C9C569F
+P 8050 2800
+F 0 "F4" V 7853 2800 50  0000 C CNN
+F 1 "Fuse" V 7944 2800 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" V 7980 2800 50  0001 C CNN
+F 3 "~" H 8050 2800 50  0001 C CNN
+F 4 "F9967CT-ND" H -300 1350 50  0001 C CNN "Digikey No."
+F 5 "Littelfuse" H -300 1350 50  0001 C CNN "Manufacturer"
+F 6 "NANOSMD400LR-C-2" H -300 1350 50  0001 C CNN "Part No."
+	1    8050 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse F3
+U 1 1 5C9C55BE
+P 8050 2500
+F 0 "F3" V 7853 2500 50  0000 C CNN
+F 1 "Fuse" V 7944 2500 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" V 7980 2500 50  0001 C CNN
+F 3 "~" H 8050 2500 50  0001 C CNN
+F 4 "F9967CT-ND" H -300 1050 50  0001 C CNN "Digikey No."
+F 5 "Littelfuse" H -300 1050 50  0001 C CNN "Manufacturer"
+F 6 "NANOSMD400LR-C-2" H -300 1050 50  0001 C CNN "Part No."
+	1    8050 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse F2
+U 1 1 5C9C52D9
+P 8050 2200
+F 0 "F2" V 7853 2200 50  0000 C CNN
+F 1 "Fuse" V 7944 2200 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" V 7980 2200 50  0001 C CNN
+F 3 "~" H 8050 2200 50  0001 C CNN
+F 4 "F9967CT-ND" H -300 750 50  0001 C CNN "Digikey No."
+F 5 "Littelfuse" H -300 750 50  0001 C CNN "Manufacturer"
+F 6 "NANOSMD400LR-C-2" H -300 750 50  0001 C CNN "Part No."
+	1    8050 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse F1
+U 1 1 5C9C37E0
+P 8050 1900
+F 0 "F1" V 7853 1900 50  0000 C CNN
+F 1 "Fuse" V 7944 1900 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" V 7980 1900 50  0001 C CNN
+F 3 "~" H 8050 1900 50  0001 C CNN
+F 4 "F9967CT-ND" H -300 450 50  0001 C CNN "Digikey No."
+F 5 "Littelfuse" H -300 450 50  0001 C CNN "Manufacturer"
+F 6 "NANOSMD400LR-C-2" H -300 450 50  0001 C CNN "Part No."
+	1    8050 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J7
+U 1 1 5C9BD594
+P 9050 3400
+F 0 "J7" H 9130 3392 50  0000 L CNN
+F 1 "JST B2PS-VH" H 9130 3301 50  0000 L CNN
+F 2 "Connector_JST:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal" H 9050 3400 50  0001 C CNN
+F 3 "~" H 9050 3400 50  0001 C CNN
+F 4 "455-1648-ND" H -50 1950 50  0001 C CNN "Digikey No."
+F 5 "JST" H -50 1950 50  0001 C CNN "Manufacturer"
+F 6 "B2PS-VH(LF)(SN)" H -50 1950 50  0001 C CNN "Part No."
+	1    9050 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 5C9BD4A3
+P 9050 3100
+F 0 "J6" H 9130 3092 50  0000 L CNN
+F 1 "JST B2PS-VH" H 9130 3001 50  0000 L CNN
+F 2 "Connector_JST:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal" H 9050 3100 50  0001 C CNN
+F 3 "~" H 9050 3100 50  0001 C CNN
+F 4 "455-1648-ND" H -50 1650 50  0001 C CNN "Digikey No."
+F 5 "JST" H -50 1650 50  0001 C CNN "Manufacturer"
+F 6 "B2PS-VH(LF)(SN)" H -50 1650 50  0001 C CNN "Part No."
+	1    9050 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 5C9BD37A
+P 9050 2800
+F 0 "J5" H 9130 2792 50  0000 L CNN
+F 1 "JST B2PS-VH" H 9130 2701 50  0000 L CNN
+F 2 "Connector_JST:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal" H 9050 2800 50  0001 C CNN
+F 3 "~" H 9050 2800 50  0001 C CNN
+F 4 "455-1648-ND" H -50 1350 50  0001 C CNN "Digikey No."
+F 5 "JST" H -50 1350 50  0001 C CNN "Manufacturer"
+F 6 "B2PS-VH(LF)(SN)" H -50 1350 50  0001 C CNN "Part No."
+	1    9050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5C9BD289
+P 9050 2500
+F 0 "J4" H 9130 2492 50  0000 L CNN
+F 1 "JST B2PS-VH" H 9130 2401 50  0000 L CNN
+F 2 "Connector_JST:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal" H 9050 2500 50  0001 C CNN
+F 3 "~" H 9050 2500 50  0001 C CNN
+F 4 "455-1648-ND" H -50 1050 50  0001 C CNN "Digikey No."
+F 5 "JST" H -50 1050 50  0001 C CNN "Manufacturer"
+F 6 "B2PS-VH(LF)(SN)" H -50 1050 50  0001 C CNN "Part No."
+	1    9050 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5C9BD198
+P 9050 2200
+F 0 "J3" H 9130 2192 50  0000 L CNN
+F 1 "JST B2PS-VH" H 9130 2101 50  0000 L CNN
+F 2 "Connector_JST:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal" H 9050 2200 50  0001 C CNN
+F 3 "~" H 9050 2200 50  0001 C CNN
+F 4 "455-1648-ND" H -50 750 50  0001 C CNN "Digikey No."
+F 5 "JST" H -50 750 50  0001 C CNN "Manufacturer"
+F 6 "B2PS-VH(LF)(SN)" H -50 750 50  0001 C CNN "Part No."
+	1    9050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5C9BB515
+P 9050 1900
+F 0 "J2" H 9130 1892 50  0000 L CNN
+F 1 "JST B2PS-VH" H 9130 1801 50  0000 L CNN
+F 2 "Connector_JST:JST_VH_B2PS-VH_1x02_P3.96mm_Horizontal" H 9050 1900 50  0001 C CNN
+F 3 "~" H 9050 1900 50  0001 C CNN
+F 4 "455-1648-ND" H -50 450 50  0001 C CNN "Digikey No."
+F 5 "JST" H -50 450 50  0001 C CNN "Manufacturer"
+F 6 "B2PS-VH(LF)(SN)" H -50 450 50  0001 C CNN "Part No."
+	1    9050 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5C9C847C
+P 2800 6500
+AR Path="/5C958DBD/5C9C847C" Ref="D?"  Part="1" 
+AR Path="/5C9C847C" Ref="D2"  Part="1" 
+F 0 "D2" V 2839 6383 50  0000 R CNN
+F 1 "LED, blue" V 2748 6383 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 2800 6500 50  0001 C CNN
+F 3 "~" H 2800 6500 50  0001 C CNN
+F 4 "Osram" H -4600 3200 50  0001 C CNN "Manufacturer"
+F 5 "LB Q39G-L2N2-35-1" H -4600 3200 50  0001 C CNN "Part No."
+F 6 "-" H 0   0   50  0001 C CNN "Digikey No."
+	1    2800 6500
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	8300 3400 8200 3400
+$Comp
+L Device:R R?
+U 1 1 5C9C8474
+P 2800 7000
+AR Path="/5C958DBD/5C9C8474" Ref="R?"  Part="1" 
+AR Path="/5C9C8474" Ref="R2"  Part="1" 
+F 0 "R2" H 2870 7046 50  0000 L CNN
+F 1 "680" H 2870 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2730 7000 50  0001 C CNN
+F 3 "~" H 2800 7000 50  0001 C CNN
+F 4 "Yageo" H -4600 3200 50  0001 C CNN "Manufacturer"
+F 5 "RC0603JR-07680R" H -4600 3200 50  0001 C CNN "Part No."
+F 6 "-" H 0   0   50  0001 C CNN "Digikey No."
+	1    2800 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5CC4DF31
+P 2000 6500
+AR Path="/5C958DBD/5CC4DF31" Ref="D?"  Part="1" 
+AR Path="/5CC4DF31" Ref="D1"  Part="1" 
+F 0 "D1" V 2039 6383 50  0000 R CNN
+F 1 "LED, green" V 1948 6383 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 2000 6500 50  0001 C CNN
+F 3 "~" H 2000 6500 50  0001 C CNN
+F 4 "Osram" H -5400 3200 50  0001 C CNN "Manufacturer"
+F 5 "LG Q971-KN-1" H -5400 3200 50  0001 C CNN "Part No."
+F 6 "-" H 0   0   50  0001 C CNN "Digikey No."
+	1    2000 6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CC4DF29
+P 2000 7000
+AR Path="/5C958DBD/5CC4DF29" Ref="R?"  Part="1" 
+AR Path="/5CC4DF29" Ref="R1"  Part="1" 
+F 0 "R1" H 2070 7046 50  0000 L CNN
+F 1 "680" H 2070 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1930 7000 50  0001 C CNN
+F 3 "~" H 2000 7000 50  0001 C CNN
+F 4 "Yageo" H -5400 3200 50  0001 C CNN "Manufacturer"
+F 5 "RC0603JR-07680R" H -5400 3200 50  0001 C CNN "Part No."
+F 6 "-" H 0   0   50  0001 C CNN "Digikey No."
+	1    2000 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Core_Ferrite_Small L?
+U 1 1 5CC268DC
+P 8400 4300
+AR Path="/5C958DBD/5CC268DC" Ref="L?"  Part="1" 
+AR Path="/5CC268DC" Ref="L7"  Part="1" 
+F 0 "L7" V 8600 4300 50  0000 C CNN
+F 1 "70R" V 8500 4300 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 4300 50  0001 C CNN
+F 3 "~" H 8400 4300 50  0001 C CNN
+F 4 "Murata" H 1150 1350 50  0001 C CNN "Manufacturer"
+F 5 " BLM18SG700TN1D " H 1150 1350 50  0001 C CNN "Part No."
+F 6 "490-5224-1-ND" H 400 0   50  0001 C CNN "Digikey No."
+	1    8400 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x07 J8
+U 1 1 5C997D7E
+P 9050 4600
+F 0 "J8" H 9130 4592 50  0000 L CNN
+F 1 "Molex 70553-0005" H 9130 4501 50  0000 L CNN
+F 2 "Power_Board:Molex_SL_70553-0005" H 9050 4600 50  0001 C CNN
+F 3 "~" H 9050 4600 50  0001 C CNN
+F 4 "WM4904-ND" H -750 350 50  0001 C CNN "Digikey No."
+F 5 "Molex" H -750 350 50  0001 C CNN "Manufacturer"
+F 6 "70553-0005" H -750 350 50  0001 C CNN "Part No."
+	1    9050 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5C990069
+P 1750 4700
+AR Path="/5C990069" Ref="SW1"  Part="1" 
+AR Path="/5C958DBD/5C990069" Ref="SW?"  Part="1" 
+F 0 "SW1" H 1750 4900 50  0000 C CNN
+F 1 "SW_Push" H 1750 4894 50  0001 C CNN
+F 2 "Power_Board:PTS645-Vx-39-2" H 1750 4900 50  0001 C CNN
+F 3 "~" H 1750 4900 50  0001 C CNN
+F 4 "CKN10053-ND" H -2000 350 50  0001 C CNN "Digikey No."
+F 5 "C&K" H -2000 350 50  0001 C CNN "Manufacturer"
+F 6 "PTS645VK39-2 LFS" H -2000 350 50  0001 C CNN "Part No."
+	1    1750 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J1
+U 1 1 5C9104AD
+P 1100 1900
+F 0 "J1" H 992 2085 50  0000 C CNN
+F 1 "Battery In" H 992 1994 50  0000 C CNN
+F 2 "Power_Board:Molex_Microfit_43650-0203" H 1100 1900 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/436500205_sd.pdf" H 1100 1900 50  0001 C CNN
+F 4 "WM17581-ND" H -650 -850 50  0001 C CNN "Digikey No."
+F 5 "Molex" H -650 -850 50  0001 C CNN "Manufacturer"
+F 6 "43650-0205" H -650 -850 50  0001 C CNN "Part No."
+	1    1100 1900
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

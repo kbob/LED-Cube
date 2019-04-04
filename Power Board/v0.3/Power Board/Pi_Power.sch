@@ -824,4 +824,6 @@ Wire Wire Line
 	3650 2850 3250 2850
 Connection ~ 3650 2850
 Connection ~ 3250 2850
+Text Label 4600 2150 0    50   ~ 0
+Vin_switched
 $EndSCHEMATC

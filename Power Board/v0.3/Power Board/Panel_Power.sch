@@ -611,4 +611,12 @@ F 6 "EDK107M050A9MAA" H 0   0   50  0001 C CNN "Part No."
 	1    2550 6800
 	1    0    0    -1  
 $EndComp
+Text Label 7000 4300 0    50   ~ 0
+Switch_Node
+Text Label 5600 4600 0    50   ~ 0
+Drive_Low
+Text Label 5050 4200 0    50   ~ 0
+Drive_High_1
+Text Label 6250 4200 1    50   ~ 0
+Drive_High_2
 $EndSCHEMATC

@@ -486,7 +486,7 @@ U 1 1 5C9E5022
 P 7700 4400
 F 0 "L8" V 7890 4400 50  0000 C CNN
 F 1 "1.3µH" V 7799 4400 50  0000 C CNN
-F 2 "Power_Board:CP_Kemet_8.3x10" H 7700 4400 50  0001 C CNN
+F 2 "Power_Board:Coilcraft_XAL1580" H 7700 4400 50  0001 C CNN
 F 3 "~" H 7700 4400 50  0001 C CNN
 F 4 "Mouser" H -100 0   50  0001 C CNN "Digikey No."
 F 5 "Coilcraft" H -100 0   50  0001 C CNN "Manufacturer"

@@ -24,7 +24,7 @@ U 1 1 5CA11F57
 P 3250 2250
 F 0 "C14" H 3300 2350 50  0000 L CNN
 F 1 "1µF" H 3300 2150 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3288 2100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3288 2100 50  0001 C CNN
 F 3 "~" H 3250 2250 50  0001 C CNN
 F 4 "587-1438-1-ND" H -100 0   50  0001 C CNN "Digikey No."
 F 5 "Taiyo Yuden" H -100 0   50  0001 C CNN "Manufacturer"
@@ -145,11 +145,8 @@ U 1 1 5CA19295
 P 2900 5350
 F 0 "R13" H 2970 5396 50  0000 L CNN
 F 1 "38.3K" H 2970 5305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 2830 5350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 5350 50  0001 C CNN
 F 3 "~" H 2900 5350 50  0001 C CNN
-F 4 "541-38.3KCCT-ND" H -100 0   50  0001 C CNN "Digikey No."
-F 5 "Vishay-Dale" H -100 0   50  0001 C CNN "Manufacturer"
-F 6 "CRCW080538K3FKEA" H -100 0   50  0001 C CNN "Part No."
 	1    2900 5350
 	1    0    0    -1  
 $EndComp
@@ -293,23 +290,8 @@ F 3 "" H 2550 3150 50  0001 C CNN
 	1    2550 3150
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR018
-U 1 1 5CA07001
-P 2550 7100
-F 0 "#PWR018" H 2550 6850 50  0001 C CNN
-F 1 "GND" H 2555 6927 50  0000 C CNN
-F 2 "" H 2550 7100 50  0001 C CNN
-F 3 "" H 2550 7100 50  0001 C CNN
-	1    2550 7100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 6500 2550 6650
 Wire Wire Line
 	2550 2400 2550 3150
-Wire Wire Line
-	2550 6950 2550 7100
 Wire Wire Line
 	3250 1950 3250 2100
 Connection ~ 3600 1950
@@ -362,7 +344,7 @@ U 1 1 5CA00DCF
 P 7700 1900
 F 0 "C17" H 7750 2000 50  0000 L CNN
 F 1 "10µF" H 7750 1800 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7738 1750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7738 1750 50  0001 C CNN
 F 3 "~" H 7700 1900 50  0001 C CNN
 F 4 "490-10748-1-ND" H -450 0   50  0001 C CNN "Digikey No."
 F 5 "Murata" H -450 0   50  0001 C CNN "Manufacturer"
@@ -384,11 +366,8 @@ U 1 1 5C9F98D7
 P 8050 5200
 F 0 "R21" H 8120 5246 50  0000 L CNN
 F 1 "1.78K" H 8120 5155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7980 5200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7980 5200 50  0001 C CNN
 F 3 "~" H 8050 5200 50  0001 C CNN
-F 4 "P1.78KCCT-ND" H 0   0   50  0001 C CNN "Digikey No."
-F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 "ERJ-6ENF1781V" H 0   0   50  0001 C CNN "Part No."
 	1    8050 5200
 	1    0    0    -1  
 $EndComp
@@ -535,7 +514,7 @@ U 1 1 5CABF5E1
 P 2900 6800
 F 0 "C13" H 2950 6900 50  0000 L CNN
 F 1 "10µF" H 2950 6700 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2938 6650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 2938 6650 50  0001 C CNN
 F 3 "~" H 2900 6800 50  0001 C CNN
 F 4 "490-10748-1-ND" H 0   0   50  0001 C CNN "Digikey No."
 F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
@@ -558,11 +537,6 @@ Wire Wire Line
 	2900 6500 2900 6650
 Wire Wire Line
 	2900 6950 2900 7100
-Connection ~ 2550 6500
-Wire Wire Line
-	2550 6500 2200 6500
-Wire Wire Line
-	2900 6500 2550 6500
 Text Label 2200 6500 0    50   ~ 0
 Vin
 Wire Wire Line
@@ -597,20 +571,6 @@ Wire Wire Line
 	8050 4950 8050 5050
 Wire Wire Line
 	7000 1600 7700 1600
-$Comp
-L Device:CP1 C12
-U 1 1 5CA4CB19
-P 2550 6800
-F 0 "C12" H 2600 6900 50  0000 L CNN
-F 1 "100µF" H 2600 6700 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x10" H 2550 6800 50  0001 C CNN
-F 3 "https://datasheet.octopart.com/EDK107M050A9MAA-Kemet-datasheet-13271990.pdf" H 2550 6800 50  0001 C CNN
-F 4 "399-6672-1-ND" H 0   0   50  0001 C CNN "Digikey No."
-F 5 "Kemet" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 "EDK107M050A9MAA" H 0   0   50  0001 C CNN "Part No."
-	1    2550 6800
-	1    0    0    -1  
-$EndComp
 Text Label 7000 4300 0    50   ~ 0
 Switch_Node
 Text Label 5600 4600 0    50   ~ 0
@@ -619,4 +579,260 @@ Text Label 5050 4200 0    50   ~ 0
 Drive_High_1
 Text Label 6250 4200 1    50   ~ 0
 Drive_High_2
+$Comp
+L Device:CP1 C19
+U 1 1 5CACF6B5
+P 3300 6800
+F 0 "C19" H 3350 6900 50  0000 L CNN
+F 1 "47µF" H 3350 6700 50  0000 L CNN
+F 2 "Power_Board:CP_OSCON_Poly_F12" H 3300 6800 50  0001 C CNN
+F 3 "~" H 3300 6800 50  0001 C CNN
+F 4 "PCE5080CT-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 " 35SVPD47M " H 0   0   50  0001 C CNN "Part No."
+	1    3300 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CACF6BB
+P 3300 7100
+F 0 "#PWR?" H 3300 6850 50  0001 C CNN
+F 1 "GND" H 3305 6927 50  0000 C CNN
+F 2 "" H 3300 7100 50  0001 C CNN
+F 3 "" H 3300 7100 50  0001 C CNN
+	1    3300 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 7100 3300 6950
+Wire Wire Line
+	3300 6650 3300 6500
+$Comp
+L Device:CP1 C20
+U 1 1 5CACF6C3
+P 3700 6800
+F 0 "C20" H 3750 6900 50  0000 L CNN
+F 1 "47µF" H 3750 6700 50  0000 L CNN
+F 2 "Power_Board:CP_OSCON_Poly_F12" H 3700 6800 50  0001 C CNN
+F 3 "~" H 3700 6800 50  0001 C CNN
+F 4 "PCE5080CT-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 " 35SVPD47M " H 0   0   50  0001 C CNN "Part No."
+	1    3700 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CACF6C9
+P 3700 7100
+F 0 "#PWR?" H 3700 6850 50  0001 C CNN
+F 1 "GND" H 3705 6927 50  0000 C CNN
+F 2 "" H 3700 7100 50  0001 C CNN
+F 3 "" H 3700 7100 50  0001 C CNN
+	1    3700 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 7100 3700 6950
+Wire Wire Line
+	3700 6650 3700 6500
+$Comp
+L Device:CP1 C21
+U 1 1 5CACF6D1
+P 4100 6800
+F 0 "C21" H 4150 6900 50  0000 L CNN
+F 1 "47µF" H 4150 6700 50  0000 L CNN
+F 2 "Power_Board:CP_OSCON_Poly_F12" H 4100 6800 50  0001 C CNN
+F 3 "~" H 4100 6800 50  0001 C CNN
+F 4 "PCE5080CT-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 " 35SVPD47M " H 0   0   50  0001 C CNN "Part No."
+	1    4100 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CACF6D7
+P 4100 7100
+F 0 "#PWR?" H 4100 6850 50  0001 C CNN
+F 1 "GND" H 4105 6927 50  0000 C CNN
+F 2 "" H 4100 7100 50  0001 C CNN
+F 3 "" H 4100 7100 50  0001 C CNN
+	1    4100 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 7100 4100 6950
+Wire Wire Line
+	4100 6650 4100 6500
+$Comp
+L Device:CP1 C22
+U 1 1 5CACF6DF
+P 4500 6800
+F 0 "C22" H 4550 6900 50  0000 L CNN
+F 1 "47µF" H 4550 6700 50  0000 L CNN
+F 2 "Power_Board:CP_OSCON_Poly_F12" H 4500 6800 50  0001 C CNN
+F 3 "~" H 4500 6800 50  0001 C CNN
+F 4 "PCE5080CT-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 " 35SVPD47M " H 0   0   50  0001 C CNN "Part No."
+	1    4500 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CACF6E5
+P 4500 7100
+F 0 "#PWR?" H 4500 6850 50  0001 C CNN
+F 1 "GND" H 4505 6927 50  0000 C CNN
+F 2 "" H 4500 7100 50  0001 C CNN
+F 3 "" H 4500 7100 50  0001 C CNN
+	1    4500 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 7100 4500 6950
+Wire Wire Line
+	4500 6650 4500 6500
+Wire Wire Line
+	2900 6500 3300 6500
+Connection ~ 3300 6500
+Wire Wire Line
+	3300 6500 3700 6500
+Connection ~ 3700 6500
+Wire Wire Line
+	3700 6500 4100 6500
+Connection ~ 4100 6500
+Wire Wire Line
+	4100 6500 4500 6500
+$Comp
+L Device:C C23
+U 1 1 5CAD643D
+P 8100 1900
+F 0 "C23" H 8150 2000 50  0000 L CNN
+F 1 "47µF" H 8150 1800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 8100 1900 50  0001 C CNN
+F 3 "~" H 8100 1900 50  0001 C CNN
+F 4 "490-10531-1-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 " GRM32EC81C476KE15L " H 0   0   50  0001 C CNN "Part No."
+	1    8100 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAD6443
+P 8100 2200
+F 0 "#PWR?" H 8100 1950 50  0001 C CNN
+F 1 "GND" H 8105 2027 50  0000 C CNN
+F 2 "" H 8100 2200 50  0001 C CNN
+F 3 "" H 8100 2200 50  0001 C CNN
+	1    8100 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2200 8100 2050
+Wire Wire Line
+	8100 1750 8100 1600
+$Comp
+L Device:C C24
+U 1 1 5CAD644B
+P 8500 1900
+F 0 "C24" H 8550 2000 50  0000 L CNN
+F 1 "47µF" H 8550 1800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 8500 1900 50  0001 C CNN
+F 3 "~" H 8500 1900 50  0001 C CNN
+F 4 "490-10531-1-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 " GRM32EC81C476KE15L " H 0   0   50  0001 C CNN "Part No."
+	1    8500 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAD6451
+P 8500 2200
+F 0 "#PWR?" H 8500 1950 50  0001 C CNN
+F 1 "GND" H 8505 2027 50  0000 C CNN
+F 2 "" H 8500 2200 50  0001 C CNN
+F 3 "" H 8500 2200 50  0001 C CNN
+	1    8500 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 2200 8500 2050
+Wire Wire Line
+	8500 1750 8500 1600
+$Comp
+L Device:C C25
+U 1 1 5CAD6459
+P 8900 1900
+F 0 "C25" H 8950 2000 50  0000 L CNN
+F 1 "47µF" H 8950 1800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 8900 1900 50  0001 C CNN
+F 3 "~" H 8900 1900 50  0001 C CNN
+F 4 "490-10531-1-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 " GRM32EC81C476KE15L " H 0   0   50  0001 C CNN "Part No."
+	1    8900 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAD645F
+P 8900 2200
+F 0 "#PWR?" H 8900 1950 50  0001 C CNN
+F 1 "GND" H 8905 2027 50  0000 C CNN
+F 2 "" H 8900 2200 50  0001 C CNN
+F 3 "" H 8900 2200 50  0001 C CNN
+	1    8900 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 2200 8900 2050
+Wire Wire Line
+	8900 1750 8900 1600
+$Comp
+L Device:C C26
+U 1 1 5CAD6467
+P 9300 1900
+F 0 "C26" H 9350 2000 50  0000 L CNN
+F 1 "47µF" H 9350 1800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 9300 1900 50  0001 C CNN
+F 3 "~" H 9300 1900 50  0001 C CNN
+F 4 "490-10531-1-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 " GRM32EC81C476KE15L " H 0   0   50  0001 C CNN "Part No."
+	1    9300 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAD646D
+P 9300 2200
+F 0 "#PWR?" H 9300 1950 50  0001 C CNN
+F 1 "GND" H 9305 2027 50  0000 C CNN
+F 2 "" H 9300 2200 50  0001 C CNN
+F 3 "" H 9300 2200 50  0001 C CNN
+	1    9300 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 2200 9300 2050
+Wire Wire Line
+	9300 1750 9300 1600
+Wire Wire Line
+	7700 1600 8100 1600
+Connection ~ 8100 1600
+Wire Wire Line
+	8100 1600 8500 1600
+Connection ~ 8500 1600
+Wire Wire Line
+	8500 1600 8900 1600
+Connection ~ 8900 1600
+Wire Wire Line
+	8900 1600 9300 1600
+Wire Wire Line
+	2200 6500 2900 6500
 $EndSCHEMATC

@@ -695,4 +695,60 @@ F 6 "43650-0205" H -650 -750 50  0001 C CNN "Part No."
 	1    1100 2000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5CADB5EA
+P 3900 6400
+F 0 "H1" H 4000 6449 50  0000 L CNN
+F 1 "M3" H 4000 6358 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3900 6400 50  0001 C CNN
+F 3 "~" H 3900 6400 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "-" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "-" H 0   0   50  0001 C CNN "Part No."
+	1    3900 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5CADBAB3
+P 4300 6400
+F 0 "H2" H 4400 6449 50  0000 L CNN
+F 1 "M3" H 4400 6358 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4300 6400 50  0001 C CNN
+F 3 "~" H 4300 6400 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "-" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "-" H 0   0   50  0001 C CNN "Part No."
+	1    4300 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5CADBCBF
+P 4300 6800
+F 0 "H4" H 4400 6849 50  0000 L CNN
+F 1 "M3" H 4400 6758 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4300 6800 50  0001 C CNN
+F 3 "~" H 4300 6800 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "-" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "-" H 0   0   50  0001 C CNN "Part No."
+	1    4300 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5CADBD88
+P 3900 6800
+F 0 "H3" H 4000 6849 50  0000 L CNN
+F 1 "M3" H 4000 6758 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3900 6800 50  0001 C CNN
+F 3 "~" H 3900 6800 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "-" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "-" H 0   0   50  0001 C CNN "Part No."
+	1    3900 6800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

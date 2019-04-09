@@ -1,4 +1,4 @@
-update=Thursday, April 04, 2019 at 07:23:07 PM
+update=Monday, April 08, 2019 at 12:35:01 PM
 version=1
 last_client=kicad
 [general]
@@ -26,7 +26,7 @@ ERC_TestSimilarLabels=1
 version=1
 PageLayoutDescrFile=
 LastNetListRead=
-CopperLayerCount=2
+CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0

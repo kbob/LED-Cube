@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title "LED Cube Power Board"
 Date ""
 Rev "v0.3"
@@ -749,6 +749,85 @@ F 4 "-" H 0   0   50  0001 C CNN "Digikey No."
 F 5 "-" H 0   0   50  0001 C CNN "Manufacturer"
 F 6 "-" H 0   0   50  0001 C CNN "Part No."
 	1    3900 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J9
+U 1 1 5CB857FA
+P 8700 5850
+F 0 "J9" H 8750 6267 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 8750 6176 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 8700 5850 50  0001 C CNN
+F 3 "~" H 8700 5850 50  0001 C CNN
+	1    8700 5850
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 5000 5250 1800 1050
+U 5CBBBF0A
+F0 "MPU9250" 50
+F1 "MPU9250.sch" 50
+$EndSheet
+Text Label 9000 5650 0    50   ~ 0
++5.2V
+Text Label 9000 5750 0    50   ~ 0
++5.2V
+Text Label 8050 5650 0    50   ~ 0
+Pi_3.3V
+Text Label 8050 5750 0    50   ~ 0
+SDA
+Text Label 8050 5850 0    50   ~ 0
+SCL
+Text Label 8050 5950 0    50   ~ 0
+Panel_Alert
+Text Label 9000 5950 0    50   ~ 0
+Power_Ctl
+Text Label 9000 6050 0    50   ~ 0
+Power_Sense
+Wire Wire Line
+	9000 5650 9500 5650
+Wire Wire Line
+	9000 5750 9500 5750
+Wire Wire Line
+	9000 5950 9500 5950
+Wire Wire Line
+	9000 6050 9500 6050
+Wire Wire Line
+	9650 5850 9650 6250
+Wire Wire Line
+	9000 5850 9650 5850
+Wire Wire Line
+	8000 5650 8500 5650
+Wire Wire Line
+	8000 5750 8500 5750
+Wire Wire Line
+	8000 5850 8500 5850
+Wire Wire Line
+	8000 5950 8500 5950
+Wire Wire Line
+	8000 6050 8500 6050
+Wire Wire Line
+	8000 6050 8000 6250
+$Comp
+L power:GND #PWR?
+U 1 1 5CC03CFB
+P 8000 6250
+F 0 "#PWR?" H 8000 6000 50  0001 C CNN
+F 1 "GND" H 8005 6077 50  0000 C CNN
+F 2 "" H 8000 6250 50  0001 C CNN
+F 3 "" H 8000 6250 50  0001 C CNN
+	1    8000 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CC046D5
+P 9650 6250
+F 0 "#PWR?" H 9650 6000 50  0001 C CNN
+F 1 "GND" H 9655 6077 50  0000 C CNN
+F 2 "" H 9650 6250 50  0001 C CNN
+F 3 "" H 9650 6250 50  0001 C CNN
+	1    9650 6250
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

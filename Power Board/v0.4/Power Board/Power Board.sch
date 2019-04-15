@@ -696,12 +696,68 @@ F 6 "43650-0205" H -650 -750 50  0001 C CNN "Part No."
 	1    0    0    -1  
 $EndComp
 $Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5CADB5EA
+P 3900 6400
+F 0 "H1" H 4000 6449 50  0000 L CNN
+F 1 "M3" H 4000 6358 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3900 6400 50  0001 C CNN
+F 3 "~" H 3900 6400 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "-" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "-" H 0   0   50  0001 C CNN "Part No."
+	1    3900 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5CADBAB3
+P 4300 6400
+F 0 "H2" H 4400 6449 50  0000 L CNN
+F 1 "M3" H 4400 6358 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4300 6400 50  0001 C CNN
+F 3 "~" H 4300 6400 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "-" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "-" H 0   0   50  0001 C CNN "Part No."
+	1    4300 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5CADBCBF
+P 4300 6800
+F 0 "H4" H 4400 6849 50  0000 L CNN
+F 1 "M3" H 4400 6758 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 4300 6800 50  0001 C CNN
+F 3 "~" H 4300 6800 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "-" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "-" H 0   0   50  0001 C CNN "Part No."
+	1    4300 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5CADBD88
+P 3900 6800
+F 0 "H3" H 4000 6849 50  0000 L CNN
+F 1 "M3" H 4000 6758 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 3900 6800 50  0001 C CNN
+F 3 "~" H 3900 6800 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "-" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "-" H 0   0   50  0001 C CNN "Part No."
+	1    3900 6800
+	1    0    0    -1  
+$EndComp
+$Comp
 L Connector_Generic:Conn_02x05_Odd_Even J9
 U 1 1 5CB857FA
 P 8700 5850
 F 0 "J9" H 8750 6267 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 8750 6176 50  0000 C CNN
-F 2 "Connector_JST:JST_PUD_S10B-PUDSS-1_2x05_P2.00mm_Horizontal" H 8700 5850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 8700 5850 50  0001 C CNN
 F 3 "~" H 8700 5850 50  0001 C CNN
 	1    8700 5850
 	1    0    0    -1  
@@ -741,20 +797,22 @@ Wire Wire Line
 Wire Wire Line
 	9000 5850 9650 5850
 Wire Wire Line
-	7900 5750 8500 5750
+	8000 5650 8500 5650
 Wire Wire Line
-	7900 5850 8500 5850
+	8000 5750 8500 5750
 Wire Wire Line
-	7900 5950 8500 5950
+	8000 5850 8500 5850
+Wire Wire Line
+	8000 5950 8500 5950
 Wire Wire Line
 	8000 6050 8500 6050
 Wire Wire Line
 	8000 6050 8000 6250
 $Comp
-L power:GND #PWR0109
+L power:GND #PWR?
 U 1 1 5CC03CFB
 P 8000 6250
-F 0 "#PWR0109" H 8000 6000 50  0001 C CNN
+F 0 "#PWR?" H 8000 6000 50  0001 C CNN
 F 1 "GND" H 8005 6077 50  0000 C CNN
 F 2 "" H 8000 6250 50  0001 C CNN
 F 3 "" H 8000 6250 50  0001 C CNN
@@ -762,40 +820,14 @@ F 3 "" H 8000 6250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0110
+L power:GND #PWR?
 U 1 1 5CC046D5
 P 9650 6250
-F 0 "#PWR0110" H 9650 6000 50  0001 C CNN
+F 0 "#PWR?" H 9650 6000 50  0001 C CNN
 F 1 "GND" H 9655 6077 50  0000 C CNN
 F 2 "" H 9650 6250 50  0001 C CNN
 F 3 "" H 9650 6250 50  0001 C CNN
 	1    9650 6250
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1300 2000
-NoConn ~ 7450 6150
-Text GLabel 7900 5650 0    50   Input ~ 0
-Pi_3.3V
-Text GLabel 7900 5750 0    50   Input ~ 0
-SDA
-Text GLabel 7900 5850 0    50   Input ~ 0
-SCL
-$Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 5CB3FC6A
-P 7950 5500
-F 0 "#FLG0101" H 7950 5575 50  0001 C CNN
-F 1 "PWR_FLAG" H 7950 5673 50  0000 C CNN
-F 2 "" H 7950 5500 50  0001 C CNN
-F 3 "~" H 7950 5500 50  0001 C CNN
-	1    7950 5500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7950 5500 7950 5650
-Wire Wire Line
-	7900 5650 7950 5650
-Connection ~ 7950 5650
-Wire Wire Line
-	7950 5650 8500 5650
 $EndSCHEMATC

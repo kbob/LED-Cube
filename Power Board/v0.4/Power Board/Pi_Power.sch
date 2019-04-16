@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
@@ -811,7 +811,7 @@ Wire Wire Line
 	4050 5100 4050 2850
 Connection ~ 4800 2150
 Wire Wire Line
-	4800 2150 4300 2150
+	4800 2150 4450 2150
 Connection ~ 5150 2150
 Connection ~ 5500 2150
 Wire Wire Line
@@ -825,5 +825,14 @@ Wire Wire Line
 Connection ~ 3650 2850
 Connection ~ 3250 2850
 Text Label 4600 2150 0    50   ~ 0
+Vin_switched
+Wire Wire Line
+	4450 2150 4450 1050
+Wire Wire Line
+	4450 1050 4850 1050
+Connection ~ 4450 2150
+Wire Wire Line
+	4450 2150 4300 2150
+Text GLabel 4850 1050 2    50   Input ~ 0
 Vin_switched
 $EndSCHEMATC

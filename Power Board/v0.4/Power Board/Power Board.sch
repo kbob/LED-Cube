@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title "LED Cube Power Board"
 Date ""
 Rev "v0.3"
@@ -693,7 +693,7 @@ F 3 "~" H 8700 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 5000 5250 1800 1050
+S 4400 5150 1350 1100
 U 5CBBBF0A
 F0 "MPU9250" 50
 F1 "MPU9250.sch" 50
@@ -782,4 +782,10 @@ $EndComp
 Connection ~ 7900 5650
 Wire Wire Line
 	7900 5650 8500 5650
+$Sheet
+S 4400 6500 1350 1100
+U 5CB541CC
+F0 "Power Meter" 50
+F1 "Power_Meter.sch" 50
+$EndSheet
 $EndSCHEMATC

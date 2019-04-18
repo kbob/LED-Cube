@@ -111,7 +111,7 @@ F5 "5.2V_switched" O R 4100 4300 50
 F6 "Battery_Power" I L 2600 4300 50 
 $EndSheet
 Wire Wire Line
-	4900 4300 4900 2300
+	4900 4300 4900 3400
 Text Label 8850 4300 2    50   ~ 0
 +5.2V
 Text Label 8850 4400 2    50   ~ 0
@@ -320,86 +320,16 @@ Wire Wire Line
 Wire Wire Line
 	8300 3400 8200 3400
 $Comp
-L Device:L_Core_Ferrite_Small L6
-U 1 1 5CA7F909
-P 8400 3400
-F 0 "L6" V 8605 3400 50  0000 C CNN
-F 1 "70R" V 8514 3400 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 3400 50  0001 C CNN
-F 3 "~" H 8400 3400 50  0001 C CNN
-F 4 "490-5224-1-ND" H 0   0   50  0001 C CNN "Digikey No."
-F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " BLM18SG700TN1D " H 0   0   50  0001 C CNN "Part No."
-	1    8400 3400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:L_Core_Ferrite_Small L5
-U 1 1 5CA7EB66
-P 8400 3100
-F 0 "L5" V 8605 3100 50  0000 C CNN
-F 1 "70R" V 8514 3100 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 3100 50  0001 C CNN
-F 3 "~" H 8400 3100 50  0001 C CNN
-F 4 "490-5224-1-ND" H 0   0   50  0001 C CNN "Digikey No."
-F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " BLM18SG700TN1D " H 0   0   50  0001 C CNN "Part No."
-	1    8400 3100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:L_Core_Ferrite_Small L4
-U 1 1 5CA7DCF6
-P 8400 2800
-F 0 "L4" V 8605 2800 50  0000 C CNN
-F 1 "70R" V 8514 2800 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 2800 50  0001 C CNN
-F 3 "~" H 8400 2800 50  0001 C CNN
-F 4 "490-5224-1-ND" H 0   0   50  0001 C CNN "Digikey No."
-F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " BLM18SG700TN1D " H 0   0   50  0001 C CNN "Part No."
-	1    8400 2800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:L_Core_Ferrite_Small L3
-U 1 1 5CA7CC63
-P 8400 2500
-F 0 "L3" V 8605 2500 50  0000 C CNN
-F 1 "70R" V 8514 2500 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 2500 50  0001 C CNN
-F 3 "~" H 8400 2500 50  0001 C CNN
-F 4 "490-5224-1-ND" H 0   0   50  0001 C CNN "Digikey No."
-F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " BLM18SG700TN1D " H 0   0   50  0001 C CNN "Part No."
-	1    8400 2500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:L_Core_Ferrite_Small L2
-U 1 1 5CA7B064
-P 8400 2200
-F 0 "L2" V 8605 2200 50  0000 C CNN
-F 1 "70R" V 8514 2200 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 2200 50  0001 C CNN
-F 3 "~" H 8400 2200 50  0001 C CNN
-F 4 "490-5224-1-ND" H 0   0   50  0001 C CNN "Digikey No."
-F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " BLM18SG700TN1D " H 0   0   50  0001 C CNN "Part No."
-	1    8400 2200
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:L_Core_Ferrite_Small L1
 U 1 1 5CA6BA0E
 P 8400 1900
 F 0 "L1" V 8605 1900 50  0000 C CNN
-F 1 "70R" V 8514 1900 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 1900 50  0001 C CNN
-F 3 "~" H 8400 1900 50  0001 C CNN
-F 4 "490-5224-1-ND" H 0   0   50  0001 C CNN "Digikey No."
-F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " BLM18SG700TN1D " H 0   0   50  0001 C CNN "Part No."
+F 1 "60R" V 8514 1900 50  0000 C CNN
+F 2 "Inductor_SMD:L_1206_3216Metric" H 8400 1900 50  0001 C CNN
+F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=FBMJ3216HM600-T%20%20&u=M" H 8400 1900 50  0001 C CNN
+F 4 "587-1770-1-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Taiyo Yuden" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "FBMJ3216HM600-T" H 0   0   50  0001 C CNN "Part No."
 	1    8400 1900
 	0    -1   -1   0   
 $EndComp
@@ -788,4 +718,87 @@ U 5CB541CC
 F0 "Power Meter" 50
 F1 "Power_Meter.sch" 50
 $EndSheet
+$Comp
+L Device:R R24
+U 1 1 5CC09EBC
+P 4900 3250
+F 0 "R24" H 4970 3296 50  0000 L CNN
+F 1 "100k" H 4970 3205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4830 3250 50  0001 C CNN
+F 3 "~" H 4900 3250 50  0001 C CNN
+	1    4900 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3100 4900 2300
+$Comp
+L Device:L_Core_Ferrite_Small L2
+U 1 1 5CC32C1C
+P 8400 2200
+F 0 "L2" V 8605 2200 50  0000 C CNN
+F 1 "60R" V 8514 2200 50  0000 C CNN
+F 2 "Inductor_SMD:L_1206_3216Metric" H 8400 2200 50  0001 C CNN
+F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=FBMJ3216HM600-T%20%20&u=M" H 8400 2200 50  0001 C CNN
+F 4 "587-1770-1-ND" H 0   300 50  0001 C CNN "Digikey No."
+F 5 "Taiyo Yuden" H 0   300 50  0001 C CNN "Manufacturer"
+F 6 "FBMJ3216HM600-T" H 0   300 50  0001 C CNN "Part No."
+	1    8400 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L_Core_Ferrite_Small L3
+U 1 1 5CC3439F
+P 8400 2500
+F 0 "L3" V 8605 2500 50  0000 C CNN
+F 1 "60R" V 8514 2500 50  0000 C CNN
+F 2 "Inductor_SMD:L_1206_3216Metric" H 8400 2500 50  0001 C CNN
+F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=FBMJ3216HM600-T%20%20&u=M" H 8400 2500 50  0001 C CNN
+F 4 "587-1770-1-ND" H 0   600 50  0001 C CNN "Digikey No."
+F 5 "Taiyo Yuden" H 0   600 50  0001 C CNN "Manufacturer"
+F 6 "FBMJ3216HM600-T" H 0   600 50  0001 C CNN "Part No."
+	1    8400 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L_Core_Ferrite_Small L4
+U 1 1 5CC356E6
+P 8400 2800
+F 0 "L4" V 8605 2800 50  0000 C CNN
+F 1 "60R" V 8514 2800 50  0000 C CNN
+F 2 "Inductor_SMD:L_1206_3216Metric" H 8400 2800 50  0001 C CNN
+F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=FBMJ3216HM600-T%20%20&u=M" H 8400 2800 50  0001 C CNN
+F 4 "587-1770-1-ND" H 0   900 50  0001 C CNN "Digikey No."
+F 5 "Taiyo Yuden" H 0   900 50  0001 C CNN "Manufacturer"
+F 6 "FBMJ3216HM600-T" H 0   900 50  0001 C CNN "Part No."
+	1    8400 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L_Core_Ferrite_Small L5
+U 1 1 5CC3696C
+P 8400 3100
+F 0 "L5" V 8605 3100 50  0000 C CNN
+F 1 "60R" V 8514 3100 50  0000 C CNN
+F 2 "Inductor_SMD:L_1206_3216Metric" H 8400 3100 50  0001 C CNN
+F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=FBMJ3216HM600-T%20%20&u=M" H 8400 3100 50  0001 C CNN
+F 4 "587-1770-1-ND" H 0   1200 50  0001 C CNN "Digikey No."
+F 5 "Taiyo Yuden" H 0   1200 50  0001 C CNN "Manufacturer"
+F 6 "FBMJ3216HM600-T" H 0   1200 50  0001 C CNN "Part No."
+	1    8400 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L_Core_Ferrite_Small L6
+U 1 1 5CC38C63
+P 8400 3400
+F 0 "L6" V 8605 3400 50  0000 C CNN
+F 1 "60R" V 8514 3400 50  0000 C CNN
+F 2 "Inductor_SMD:L_1206_3216Metric" H 8400 3400 50  0001 C CNN
+F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=FBMJ3216HM600-T%20%20&u=M" H 8400 3400 50  0001 C CNN
+F 4 "587-1770-1-ND" H 0   1500 50  0001 C CNN "Digikey No."
+F 5 "Taiyo Yuden" H 0   1500 50  0001 C CNN "Manufacturer"
+F 6 "FBMJ3216HM600-T" H 0   1500 50  0001 C CNN "Part No."
+	1    8400 3400
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

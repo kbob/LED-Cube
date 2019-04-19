@@ -566,22 +566,6 @@ F 6 "-" H 0   0   50  0001 C CNN "Digikey No."
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:L_Core_Ferrite_Small L?
-U 1 1 5CC268DC
-P 8400 4300
-AR Path="/5C958DBD/5CC268DC" Ref="L?"  Part="1" 
-AR Path="/5CC268DC" Ref="L7"  Part="1" 
-F 0 "L7" V 8600 4300 50  0000 C CNN
-F 1 "70R" V 8500 4300 50  0000 C CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 8400 4300 50  0001 C CNN
-F 3 "~" H 8400 4300 50  0001 C CNN
-F 4 "Murata" H 1150 1350 50  0001 C CNN "Manufacturer"
-F 5 " BLM18SG700TN1D " H 1150 1350 50  0001 C CNN "Part No."
-F 6 "490-5224-1-ND" H 400 0   50  0001 C CNN "Digikey No."
-	1    8400 4300
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Switch:SW_Push SW1
 U 1 1 5C990069
 P 1750 4700
@@ -799,6 +783,20 @@ F 4 "587-1770-1-ND" H 0   1500 50  0001 C CNN "Digikey No."
 F 5 "Taiyo Yuden" H 0   1500 50  0001 C CNN "Manufacturer"
 F 6 "FBMJ3216HM600-T" H 0   1500 50  0001 C CNN "Part No."
 	1    8400 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L_Core_Ferrite_Small L7
+U 1 1 5CC7E354
+P 8400 4300
+F 0 "L7" V 8605 4300 50  0000 C CNN
+F 1 "60R" V 8514 4300 50  0000 C CNN
+F 2 "Inductor_SMD:L_1206_3216Metric" H 8400 4300 50  0001 C CNN
+F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=FBMJ3216HM600-T%20%20&u=M" H 8400 4300 50  0001 C CNN
+F 4 "587-1770-1-ND" H 0   2400 50  0001 C CNN "Digikey No."
+F 5 "Taiyo Yuden" H 0   2400 50  0001 C CNN "Manufacturer"
+F 6 "FBMJ3216HM600-T" H 0   2400 50  0001 C CNN "Part No."
+	1    8400 4300
 	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC

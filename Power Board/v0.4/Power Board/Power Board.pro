@@ -1,4 +1,4 @@
-update=Saturday, April 20, 2019 at 04:32:01 PM
+update=Saturday, April 20, 2019 at 06:23:21 PM
 version=1
 last_client=kicad
 [general]
@@ -108,7 +108,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/4]
 Name=Pi_Battery
-Clearance=0.3
+Clearance=0.25
 TrackWidth=0.3
 ViaDiameter=1
 ViaDrill=0.5
@@ -119,7 +119,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/5]
 Name=Pi_Power
-Clearance=0.3
+Clearance=0.25
 TrackWidth=1.4
 ViaDiameter=1
 ViaDrill=0.5

@@ -799,4 +799,48 @@ F 6 "FBMJ3216HM600-T" H 0   2400 50  0001 C CNN "Part No."
 	1    8400 4300
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5CBE4232
+P 6350 5350
+F 0 "H1" H 6450 5396 50  0000 L CNN
+F 1 "MountingHole" H 6450 5305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6350 5350 50  0001 C CNN
+F 3 "~" H 6350 5350 50  0001 C CNN
+	1    6350 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5CBE4288
+P 6350 5600
+F 0 "H2" H 6450 5646 50  0000 L CNN
+F 1 "MountingHole" H 6450 5555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6350 5600 50  0001 C CNN
+F 3 "~" H 6350 5600 50  0001 C CNN
+	1    6350 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5CBE430A
+P 6350 5850
+F 0 "H3" H 6450 5896 50  0000 L CNN
+F 1 "MountingHole" H 6450 5805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6350 5850 50  0001 C CNN
+F 3 "~" H 6350 5850 50  0001 C CNN
+	1    6350 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5CBE438C
+P 6350 6100
+F 0 "H4" H 6450 6146 50  0000 L CNN
+F 1 "MountingHole" H 6450 6055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6350 6100 50  0001 C CNN
+F 3 "~" H 6350 6100 50  0001 C CNN
+	1    6350 6100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

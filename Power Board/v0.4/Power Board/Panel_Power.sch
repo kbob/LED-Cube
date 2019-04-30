@@ -147,6 +147,9 @@ F 0 "R13" H 2970 5396 50  0000 L CNN
 F 1 "38.3K" H 2970 5305 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2830 5350 50  0001 C CNN
 F 3 "~" H 2900 5350 50  0001 C CNN
+F 4 "RMCF0603FT38K3CT-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Stackpole" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "RMCF0603FT38K3" H 0   0   50  0001 C CNN "Part No."
 	1    2900 5350
 	1    0    0    -1  
 $EndComp
@@ -348,7 +351,7 @@ F 2 "Capacitor_SMD:C_1206_3216Metric" H 7738 1750 50  0001 C CNN
 F 3 "~" H 7700 1900 50  0001 C CNN
 F 4 "490-10748-1-ND" H -450 0   50  0001 C CNN "Digikey No."
 F 5 "Murata" H -450 0   50  0001 C CNN "Manufacturer"
-F 6 " GRM21BR61E106MA73L " H -450 0   50  0001 C CNN "Part No."
+F 6 "GRM21BR61E106MA73L" H -450 0   50  0001 C CNN "Part No."
 	1    7700 1900
 	1    0    0    -1  
 $EndComp
@@ -365,9 +368,12 @@ L Device:R R21
 U 1 1 5C9F98D7
 P 8050 5200
 F 0 "R21" H 8120 5246 50  0000 L CNN
-F 1 "1.78K" H 8120 5155 50  0000 L CNN
+F 1 "1.78K 1%" H 8120 5155 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7980 5200 50  0001 C CNN
 F 3 "~" H 8050 5200 50  0001 C CNN
+F 4 "311-17.8KHRCT-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "RC0603FR-0717K8L" H 0   0   50  0001 C CNN "Part No."
 	1    8050 5200
 	1    0    0    -1  
 $EndComp
@@ -376,12 +382,12 @@ L Device:R R20
 U 1 1 5C9F930E
 P 8050 4700
 F 0 "R20" H 8120 4746 50  0000 L CNN
-F 1 "10K" H 8120 4655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 7980 4700 50  0001 C CNN
+F 1 "10K 1%" H 8120 4655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7980 4700 50  0001 C CNN
 F 3 "~" H 8050 4700 50  0001 C CNN
-F 4 "RMCF0402FT10K0CT-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 4 "RNCP0603FTD10K0CT-ND" H 0   0   50  0001 C CNN "Digikey No."
 F 5 "Stackpole" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 "RMCF0402FT10K0" H 0   0   50  0001 C CNN "Part No."
+F 6 "RNCP0603FTD10K0" H 0   0   50  0001 C CNN "Part No."
 	1    8050 4700
 	1    0    0    -1  
 $EndComp
@@ -518,7 +524,7 @@ F 2 "Capacitor_SMD:C_1206_3216Metric" H 2938 6650 50  0001 C CNN
 F 3 "~" H 2900 6800 50  0001 C CNN
 F 4 "490-10748-1-ND" H 0   0   50  0001 C CNN "Digikey No."
 F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " GRM21BR61E106MA73L " H 0   0   50  0001 C CNN "Part No."
+F 6 "GRM21BR61E106MA73L" H 0   0   50  0001 C CNN "Part No."
 	1    2900 6800
 	1    0    0    -1  
 $EndComp
@@ -589,7 +595,7 @@ F 2 "Power_Board:CP_OSCON_Poly_F12" H 3300 6800 50  0001 C CNN
 F 3 "~" H 3300 6800 50  0001 C CNN
 F 4 "PCE5080CT-ND" H 0   0   50  0001 C CNN "Digikey No."
 F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " 35SVPD47M " H 0   0   50  0001 C CNN "Part No."
+F 6 "35SVPD47M" H 0   0   50  0001 C CNN "Part No."
 	1    3300 6800
 	1    0    0    -1  
 $EndComp
@@ -618,7 +624,7 @@ F 2 "Power_Board:CP_OSCON_Poly_F12" H 3700 6800 50  0001 C CNN
 F 3 "~" H 3700 6800 50  0001 C CNN
 F 4 "PCE5080CT-ND" H 0   0   50  0001 C CNN "Digikey No."
 F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " 35SVPD47M " H 0   0   50  0001 C CNN "Part No."
+F 6 "35SVPD47M" H 0   0   50  0001 C CNN "Part No."
 	1    3700 6800
 	1    0    0    -1  
 $EndComp
@@ -647,7 +653,7 @@ F 2 "Power_Board:CP_OSCON_Poly_F12" H 4100 6800 50  0001 C CNN
 F 3 "~" H 4100 6800 50  0001 C CNN
 F 4 "PCE5080CT-ND" H 0   0   50  0001 C CNN "Digikey No."
 F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " 35SVPD47M " H 0   0   50  0001 C CNN "Part No."
+F 6 "35SVPD47M" H 0   0   50  0001 C CNN "Part No."
 	1    4100 6800
 	1    0    0    -1  
 $EndComp
@@ -676,7 +682,7 @@ F 2 "Power_Board:CP_OSCON_Poly_F12" H 4500 6800 50  0001 C CNN
 F 3 "~" H 4500 6800 50  0001 C CNN
 F 4 "PCE5080CT-ND" H 0   0   50  0001 C CNN "Digikey No."
 F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " 35SVPD47M " H 0   0   50  0001 C CNN "Part No."
+F 6 "35SVPD47M" H 0   0   50  0001 C CNN "Part No."
 	1    4500 6800
 	1    0    0    -1  
 $EndComp
@@ -716,7 +722,7 @@ F 2 "Capacitor_SMD:C_1210_3225Metric" H 8100 1900 50  0001 C CNN
 F 3 "~" H 8100 1900 50  0001 C CNN
 F 4 "490-10531-1-ND" H 0   0   50  0001 C CNN "Digikey No."
 F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " GRM32EC81C476KE15L " H 0   0   50  0001 C CNN "Part No."
+F 6 "GRM32EC81C476KE15L" H 0   0   50  0001 C CNN "Part No."
 	1    8100 1900
 	1    0    0    -1  
 $EndComp
@@ -745,7 +751,7 @@ F 2 "Capacitor_SMD:C_1210_3225Metric" H 8500 1900 50  0001 C CNN
 F 3 "~" H 8500 1900 50  0001 C CNN
 F 4 "490-10531-1-ND" H 0   0   50  0001 C CNN "Digikey No."
 F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " GRM32EC81C476KE15L " H 0   0   50  0001 C CNN "Part No."
+F 6 "GRM32EC81C476KE15L" H 0   0   50  0001 C CNN "Part No."
 	1    8500 1900
 	1    0    0    -1  
 $EndComp
@@ -774,7 +780,7 @@ F 2 "Capacitor_SMD:C_1210_3225Metric" H 8900 1900 50  0001 C CNN
 F 3 "~" H 8900 1900 50  0001 C CNN
 F 4 "490-10531-1-ND" H 0   0   50  0001 C CNN "Digikey No."
 F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " GRM32EC81C476KE15L " H 0   0   50  0001 C CNN "Part No."
+F 6 "GRM32EC81C476KE15L" H 0   0   50  0001 C CNN "Part No."
 	1    8900 1900
 	1    0    0    -1  
 $EndComp
@@ -803,7 +809,7 @@ F 2 "Capacitor_SMD:C_1210_3225Metric" H 9300 1900 50  0001 C CNN
 F 3 "~" H 9300 1900 50  0001 C CNN
 F 4 "490-10531-1-ND" H 0   0   50  0001 C CNN "Digikey No."
 F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " GRM32EC81C476KE15L " H 0   0   50  0001 C CNN "Part No."
+F 6 "GRM32EC81C476KE15L" H 0   0   50  0001 C CNN "Part No."
 	1    9300 1900
 	1    0    0    -1  
 $EndComp
@@ -845,7 +851,7 @@ F 2 "Capacitor_SMD:C_1206_3216Metric" H 2588 6650 50  0001 C CNN
 F 3 "~" H 2550 6800 50  0001 C CNN
 F 4 "490-10748-1-ND" H -350 0   50  0001 C CNN "Digikey No."
 F 5 "Murata" H -350 0   50  0001 C CNN "Manufacturer"
-F 6 " GRM21BR61E106MA73L " H -350 0   50  0001 C CNN "Part No."
+F 6 "GRM21BR61E106MA73L" H -350 0   50  0001 C CNN "Part No."
 	1    2550 6800
 	1    0    0    -1  
 $EndComp

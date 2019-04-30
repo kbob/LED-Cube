@@ -56,6 +56,9 @@ F 0 "C28" H 5915 4096 50  0000 L CNN
 F 1 "100nF" H 5915 4005 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5838 3900 50  0001 C CNN
 F 3 "~" H 5800 4050 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "GRM188R71C104KA01D" H 0   0   50  0001 C CNN "Part No."
 	1    5800 4050
 	1    0    0    -1  
 $EndComp
@@ -84,6 +87,9 @@ F 0 "C29" H 4065 2296 50  0000 L CNN
 F 1 "10nF" H 4065 2205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3988 2100 50  0001 C CNN
 F 3 "~" H 3950 2250 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "GRM188R71H103KA01D" H 0   0   50  0001 C CNN "Part No."
 	1    3950 2250
 	1    0    0    -1  
 $EndComp
@@ -108,6 +114,9 @@ F 0 "C27" H 5115 2296 50  0000 L CNN
 F 1 "100nF" H 5115 2205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5115 2159 50  0001 L CNN
 F 3 "~" H 5000 2250 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "GRM188R71C104KA01D" H 0   0   50  0001 C CNN "Part No."
 	1    5000 2250
 	1    0    0    -1  
 $EndComp
@@ -119,6 +128,9 @@ F 0 "U4" H 4100 4300 50  0000 C CNN
 F 1 "MPU-9250" H 4850 2750 50  0000 C CNN
 F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 4550 2500 50  0001 C CNN
 F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 4550 3350 50  0001 C CNN
+F 4 "1428-1019-1-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "InvenSense" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "MPU-9250" H 0   0   50  0001 C CNN "Part No."
 	1    4550 3500
 	1    0    0    -1  
 $EndComp

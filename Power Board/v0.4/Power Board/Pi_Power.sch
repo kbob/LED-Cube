@@ -56,7 +56,7 @@ F 2 "Capacitor_SMD:C_0805_2012Metric" H 5288 4850 50  0001 C CNN
 F 3 "~" H 5250 5000 50  0001 C CNN
 F 4 "490-10748-1-ND" H 0   0   50  0001 C CNN "Digikey No."
 F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " GRM21BR61E106MA73L " H 0   0   50  0001 C CNN "Part No."
+F 6 "GRM21BR61E106MA73L" H 0   0   50  0001 C CNN "Part No."
 	1    5250 5000
 	0    -1   -1   0   
 $EndComp
@@ -259,7 +259,7 @@ F 2 "Capacitor_SMD:C_0805_2012Metric" H 5188 2300 50  0001 C CNN
 F 3 "~" H 5150 2450 50  0001 C CNN
 F 4 "490-10748-1-ND" H 0   0   50  0001 C CNN "Digikey No."
 F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " GRM21BR61E106MA73L " H 0   0   50  0001 C CNN "Part No."
+F 6 "GRM21BR61E106MA73L" H 0   0   50  0001 C CNN "Part No."
 	1    5150 2450
 	1    0    0    -1  
 $EndComp
@@ -315,7 +315,7 @@ F 2 "Capacitor_SMD:C_0603_1608Metric" H 8788 2300 50  0001 C CNN
 F 3 "~" H 8750 2450 50  0001 C CNN
 F 4 "732-8009-1-ND" H 0   0   50  0001 C CNN "Digikey No."
 F 5 "Wurth" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " 885012206091" H 0   0   50  0001 C CNN "Part No."
+F 6 "885012206091" H 0   0   50  0001 C CNN "Part No."
 	1    8750 2450
 	1    0    0    -1  
 $EndComp
@@ -352,7 +352,7 @@ F 2 "Capacitor_SMD:C_1210_3225Metric" H 9388 2300 50  0001 C CNN
 F 3 "~" H 9350 2450 50  0001 C CNN
 F 4 "587-1965-1-ND" H 550 -1250 50  0001 C CNN "Digikey No."
 F 5 "Taiyo Yuden" H 550 -1250 50  0001 C CNN "Manufacturer"
-F 6 " LMK325BJ107MM-T " H 550 -1250 50  0001 C CNN "Part No."
+F 6 "LMK325BJ107MM-T" H 550 -1250 50  0001 C CNN "Part No."
 	1    9350 2450
 	1    0    0    -1  
 $EndComp

@@ -22,6 +22,9 @@ F 0 "U5" H 5700 4200 50  0000 C CNN
 F 1 "ADS1000" H 5700 3500 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5950 3850 50  0000 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ads1000.pdf" H 5950 3850 50  0001 C CNN
+F 4 "296-38847-1-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "TI" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "ADS1000A0IDBVR" H 0   0   50  0001 C CNN "Part No."
 	1    5950 3850
 	1    0    0    -1  
 $EndComp
@@ -52,12 +55,12 @@ L Device:R R22
 U 1 1 5CB69830
 P 4950 3400
 F 0 "R22" H 5020 3446 50  0000 L CNN
-F 1 "100K 1%" H 5020 3355 50  0000 L CNN
+F 1 "10K 1%" H 5020 3355 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4880 3400 50  0001 C CNN
 F 3 "~" H 4950 3400 50  0001 C CNN
-F 4 "311-100KHRCT-ND" H 0   0   50  0001 C CNN "Digikey No."
-F 5 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " RC0603FR-07100KL" H 0   0   50  0001 C CNN "Part No."
+F 4 "RNCP0603FTD10K0CT-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Stackpole" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "RNCP0603FTD10K0" H 0   0   50  0001 C CNN "Part No."
 	1    4950 3400
 	1    0    0    -1  
 $EndComp
@@ -66,12 +69,12 @@ L Device:R R23
 U 1 1 5CB69D57
 P 4950 4100
 F 0 "R23" H 5020 4146 50  0000 L CNN
-F 1 "17.8K 1%" H 5020 4055 50  0000 L CNN
+F 1 "1.78K 1%" H 5020 4055 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4880 4100 50  0001 C CNN
 F 3 "~" H 4950 4100 50  0001 C CNN
-F 4 " 311-17.8KHRCT-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 4 "311-17.8KHRCT-ND" H 0   0   50  0001 C CNN "Digikey No."
 F 5 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 6 " RC0603FR-0717K8L " H 0   0   50  0001 C CNN "Part No."
+F 6 "RC0603FR-0717K8L" H 0   0   50  0001 C CNN "Part No."
 	1    4950 4100
 	1    0    0    -1  
 $EndComp
@@ -129,6 +132,9 @@ F 0 "C30" H 7265 3896 50  0000 L CNN
 F 1 "100nF" H 7265 3805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7188 3700 50  0001 C CNN
 F 3 "~" H 7150 3850 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "GRM188R71C104KA01D" H 0   0   50  0001 C CNN "Part No."
 	1    7150 3850
 	1    0    0    -1  
 $EndComp

@@ -603,6 +603,9 @@ F 0 "J9" H 8750 6267 50  0000 C CNN
 F 1 "Raspberry Pi" H 8750 6176 50  0000 C CNN
 F 2 "Connector_JST:JST_PUD_S10B-PUDSS-1_2x05_P2.00mm_Horizontal" H 8700 5850 50  0001 C CNN
 F 3 "~" H 8700 5850 50  0001 C CNN
+F 4 "455-2486-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "JST" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "S10B-PUDSS-1(LF)(SN)" H 0   0   50  0001 C CNN "Part No."
 	1    8700 5850
 	1    0    0    -1  
 $EndComp
@@ -707,9 +710,12 @@ L Device:R R24
 U 1 1 5CC09EBC
 P 4900 3250
 F 0 "R24" H 4970 3296 50  0000 L CNN
-F 1 "100k" H 4970 3205 50  0000 L CNN
+F 1 "100K" H 4970 3205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4830 3250 50  0001 C CNN
 F 3 "~" H 4900 3250 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "RC0603JR-07100K" H 0   0   50  0001 C CNN "Part No."
 	1    4900 3250
 	1    0    0    -1  
 $EndComp
@@ -807,6 +813,9 @@ F 0 "H1" H 6450 5396 50  0000 L CNN
 F 1 "MountingHole" H 6450 5305 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6350 5350 50  0001 C CNN
 F 3 "~" H 6350 5350 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "-" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "-" H 0   0   50  0001 C CNN "Part No."
 	1    6350 5350
 	1    0    0    -1  
 $EndComp
@@ -818,6 +827,9 @@ F 0 "H2" H 6450 5646 50  0000 L CNN
 F 1 "MountingHole" H 6450 5555 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6350 5600 50  0001 C CNN
 F 3 "~" H 6350 5600 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "-" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "-" H 0   0   50  0001 C CNN "Part No."
 	1    6350 5600
 	1    0    0    -1  
 $EndComp
@@ -829,6 +841,9 @@ F 0 "H3" H 6450 5896 50  0000 L CNN
 F 1 "MountingHole" H 6450 5805 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6350 5850 50  0001 C CNN
 F 3 "~" H 6350 5850 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "-" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "-" H 0   0   50  0001 C CNN "Part No."
 	1    6350 5850
 	1    0    0    -1  
 $EndComp
@@ -840,6 +855,9 @@ F 0 "H4" H 6450 6146 50  0000 L CNN
 F 1 "MountingHole" H 6450 6055 50  0000 L CNN
 F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6350 6100 50  0001 C CNN
 F 3 "~" H 6350 6100 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "-" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "-" H 0   0   50  0001 C CNN "Part No."
 	1    6350 6100
 	1    0    0    -1  
 $EndComp

@@ -73,6 +73,12 @@ on a Raspberry Pi is not a sane thing to do.
 
 Reboot to enable the new swap space.
 
+## Enable Bonjour ssh service.
+
+Create `/etc/avahi/services/ssh.service`.
+
+    $ sudo cp /usr/share/doc/avahi/ssh.service /etc/avahi/services/
+
 ## Update and install packages
 
     $ sudo apt-get update

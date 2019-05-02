@@ -588,10 +588,10 @@ P 1100 2000
 F 0 "J1" H 992 2185 50  0000 C CNN
 F 1 "Battery In" H 992 2094 50  0000 C CNN
 F 2 "Power_Board:JST_VH_B3PS-VH_1x03_P3.96mm_Horizontal" H 1100 2000 50  0001 C CNN
-F 3 "https://www.molex.com/pdm_docs/sd/436500205_sd.pdf" H 1100 2000 50  0001 C CNN
-F 4 "WM17581-ND" H -650 -750 50  0001 C CNN "Digikey No."
-F 5 "Molex" H -650 -750 50  0001 C CNN "Manufacturer"
-F 6 "43650-0205" H -650 -750 50  0001 C CNN "Part No."
+F 3 "" H 1100 2000 50  0001 C CNN
+F 4 "455-1649-ND" H -650 -750 50  0001 C CNN "Digikey No."
+F 5 "JST" H -650 -750 50  0001 C CNN "Manufacturer"
+F 6 "B3PS-VH(LF)(SN)" H -650 -750 50  0001 C CNN "Part No."
 	1    1100 2000
 	1    0    0    -1  
 $EndComp

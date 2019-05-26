@@ -101,3 +101,36 @@ These packages are needed for the FPGA tools.
     $ ./summon-fpga-tools.sh CPUS=1 NEXTPNR_BUILD_GUI=off
 
 This will run for several hours.  Good time to take a break.
+
+
+# Apt History
+
+Here is the raw history.  Some of these are probably not needed.
+
+```text
+history.log.1:Commandline: apt-get install raspi-config
+history.log.1:Commandline: apt-get dist-upgrade
+history.log.1:Commandline: apt-get install git
+history.log.1:Commandline: apt-get install build-essential clang bison flex libreadline-dev gawk tcl-dev libffi-dev git mercurial graphviz xdot pkg-config python python3 libftdi-dev python3-dev libboost-all-dev cmake libeigen3-dev
+history.log.1:Commandline: apt-get install autoconf
+history.log.1:Commandline: apt-get install gperf
+history.log.1:Commandline: apt-get install python3-pip
+history.log.1:Commandline: apt-get install python3-ftdi1
+history.log.1:Commandline: apt-get install emacs-nox
+history.log.1:Commandline: apt-get install swig
+history.log:Commandline: apt-get install python-virtualenv
+history.log:Commandline: apt-get install mesa-utils
+history.log:Commandline: apt-get install python-imaging
+history.log:Commandline: apt-get purge mesa-utils
+history.log:Commandline: apt-get install golang
+history.log:Commandline: apt-get install libgl1-mesa-dev
+history.log:Commandline: apt-get install libegl1-mesa-dev
+history.log:Commandline: apt-get install ffmpeg
+history.log:Commandline: apt-get install libgbm-dev
+history.log:Commandline: apt-get install ltrace
+history.log:Commandline: apt-get install stress
+history.log:Commandline: apt-get install i2c-tools
+history.log:Commandline: apt-get install libgles2-mesa-dev
+```
+
+(more to come...)

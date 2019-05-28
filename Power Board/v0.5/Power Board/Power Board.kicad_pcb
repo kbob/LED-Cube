@@ -11834,7 +11834,7 @@
     )
   )
 
-  (gr_text "LED Cube Power Board v0.4" (at 85 108.75) (layer F.SilkS)
+  (gr_text "LED Cube Power Board v0.5" (at 85 108.75) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
   )
   (gr_text "Panels Pwr" (at 141 52.5) (layer F.SilkS)

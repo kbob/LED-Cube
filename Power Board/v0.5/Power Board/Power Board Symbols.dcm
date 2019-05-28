@@ -1,0 +1,11 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CSD86360Q5D
+D Synchronous Buck NexFET™ Power Block
+$ENDCMP
+#
+$CMP TPS53819A
+D Single Synchronous Step-Down Controller with PMBUS
+$ENDCMP
+#
+#End Doc Library

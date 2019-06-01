@@ -84,6 +84,7 @@ for power sense, power control, and power alert (interrupt).
 
 At the power board end, the connector is a 10 position JST PUD.
 At the Raspberry Pi end, a 12 position Amphenol Mini-PV is used.
+Each conductor is 67mm long.
 
 
 Power Board Pin | Pi Pin | Color  | Function

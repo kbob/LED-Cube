@@ -11,27 +11,6 @@ In `/boot/config.txt`:
 Some of those parameters are probably not needed.
 
 
-# Wiring
-
-The Raspberry Pi uses the first 12 pins of the P1 connector for power and
-data.
-
-PIN | Desc.        | Use
---- | ------------ | ---
-  1 | 3.3V         | Power out to IMU
-  2 | 5V           | (not used)
-  3 | BCM 2/SDA    | I²C SDA to IMU and power board
-  4 | 5V           | Power In
-  5 | BCM 3/SCL    | I²C SCL to IMU and power board
-  6 | Ground       | Ground to power board
-  7 | BCM 4/GPCLK0 | Power Control
-  8 | BCM 14/TXD   | (not used - reserved for serial console)
-  9 | Ground       | Ground to IMU board
- 10 | BCM 15/RXD   | (not used - reserved for serial console)
- 11 | BCM 17       | Power Sense
- 12 | BCM 18/PWM0  | Power Alert (interrupt)
-
-
 # Power Board
 
 ## Power Board v0.3

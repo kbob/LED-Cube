@@ -55,8 +55,8 @@ login password.
 
 ## Run `raspi-config`
 
-Use `sudo raspi-config` to change the hostname, locale and timezone, and
-enable I&sup2;C and the GL driver.
+Use `sudo raspi-config` to change the hostname, locale and timezone and
+enable I&sup2;C.  Also select the "legacy" GL driver.
 
 GL driver is under Advanced Options.
 

@@ -35,10 +35,10 @@ uses a 2 position VHR.
 
  Panel Pin | Power Board Pin | Use
 :---------:|:---------------:|:---:
-     1     |       xx        | N/C
-     2     |        1        | +4V
-     3     |        2        | GND
-     4     |       xx        | N/C
+ 1         |        -        | N/C
+ 2         |        1        | +4V
+ 3         |        2        | GND
+ 4         |        -        | N/C
 
 The wire to each panel is a different length to minimize cable clutter.
 
@@ -84,23 +84,23 @@ for power sense, power control, and power alert (interrupt).
 
 At the power board end, the connector is a 10 position JST PUD.
 At the Raspberry Pi end, a 12 position Amphenol Mini-PV is used.
-Each conductor is 67mm long.
+Each conductor is 67mm long before crimping.
 
 
 Power Board Pin | Pi Pin | Color  | Function
 ---------------:|-------:|--------|----------
-            1   |    1   | yellow | +3.3V
-            2   |    2   | red    | +5.25V
-            3   |    3   | green  | I&sup2;C SDA
-            4   |    4   | red    | +5.25V
-            5   |    5   | blue   | I&sub2;C SCL
-            6   |    6   | black  | GND
-            8   |    7   | blue   | Power Control
-           \-   |    8   | \-     | Reserved for serial console
-            9   |    9   | black  | GND
-           \-   |   10   | \-     | Reserved for serial console
-           10   |   11   | green  | Power Sense
-            7   |   12   | white  | Power Alert
+  1             |    1   | yellow | +3.3V
+  2             |    2   | red    | +5.25V
+  3             |    3   | green  | I&sup2;C SDA
+  4             |    4   | red    | +5.25V
+  5             |    5   | blue   | I&sub2;C SCL
+  6             |    6   | black  | GND
+  8             |    7   | blue   | Power Control
+ \-             |    8   | -      | Reserved for serial console
+  9             |    9   | black  | GND
+ \-             |   10   | -      | Reserved for serial console
+ 10             |   11   | green  | Power Sense
+  7             |   12   | white  | Power Alert
 
 
 

@@ -35,10 +35,10 @@ uses a 2 position VHR.
 
  Panel Pin | Power Board Pin | Use
 :---------:|:---------------:|:---:
-     1     |       \-        | N/C
+     1     |       xx        | N/C
      2     |        1        | +4V
      3     |        2        | GND
-     4     |       \-        | N/C
+     4     |       xx        | N/C
 
 The wire to each panel is a different length to minimize cable clutter.
 

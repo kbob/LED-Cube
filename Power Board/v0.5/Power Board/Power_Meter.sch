@@ -1,0 +1,161 @@
+EESchema Schematic File Version 4
+LIBS:Power Board-cache
+EELAYER 29 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Power_Board:ADS1000 U5
+U 1 1 5CB6826E
+P 5950 3850
+F 0 "U5" H 5700 4200 50  0000 C CNN
+F 1 "ADS1000" H 5700 3500 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5950 3850 50  0000 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ads1000.pdf" H 5950 3850 50  0001 C CNN
+F 4 "296-38847-1-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "TI" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "ADS1000A0IDBVR" H 0   0   50  0001 C CNN "Part No."
+	1    5950 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5CB68EA0
+P 5450 4450
+F 0 "#PWR0116" H 5450 4200 50  0001 C CNN
+F 1 "GND" H 5455 4277 50  0000 C CNN
+F 2 "" H 5450 4450 50  0001 C CNN
+F 3 "" H 5450 4450 50  0001 C CNN
+	1    5450 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5CB69452
+P 5950 4450
+F 0 "#PWR0117" H 5950 4200 50  0001 C CNN
+F 1 "GND" H 5955 4277 50  0000 C CNN
+F 2 "" H 5950 4450 50  0001 C CNN
+F 3 "" H 5950 4450 50  0001 C CNN
+	1    5950 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R22
+U 1 1 5CB69830
+P 4950 3400
+F 0 "R22" H 5020 3446 50  0000 L CNN
+F 1 "10K 1%" H 5020 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4880 3400 50  0001 C CNN
+F 3 "~" H 4950 3400 50  0001 C CNN
+F 4 "RNCP0603FTD10K0CT-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Stackpole" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "RNCP0603FTD10K0" H 0   0   50  0001 C CNN "Part No."
+	1    4950 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R23
+U 1 1 5CB69D57
+P 4950 4100
+F 0 "R23" H 5020 4146 50  0000 L CNN
+F 1 "1.78K 1%" H 5020 4055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4880 4100 50  0001 C CNN
+F 3 "~" H 4950 4100 50  0001 C CNN
+F 4 "311-17.8KHRCT-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "RC0603FR-0717K8L" H 0   0   50  0001 C CNN "Part No."
+	1    4950 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5CB6A4C1
+P 4950 4450
+F 0 "#PWR0118" H 4950 4200 50  0001 C CNN
+F 1 "GND" H 4955 4277 50  0000 C CNN
+F 2 "" H 4950 4450 50  0001 C CNN
+F 3 "" H 4950 4450 50  0001 C CNN
+	1    4950 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4250 5950 4450
+Wire Wire Line
+	5550 3950 5450 3950
+Wire Wire Line
+	5450 3950 5450 4450
+Wire Wire Line
+	5550 3750 4950 3750
+Wire Wire Line
+	4950 3550 4950 3750
+Connection ~ 4950 3750
+Wire Wire Line
+	4950 3750 4950 3950
+Wire Wire Line
+	4950 4250 4950 4450
+Wire Wire Line
+	4950 3250 4950 3050
+Wire Wire Line
+	4950 3050 4900 3050
+Wire Wire Line
+	5950 3450 5950 3300
+Wire Wire Line
+	5950 3050 5900 3050
+Text GLabel 5900 3050 0    50   Input ~ 0
+Pi_3.3V
+Text GLabel 4900 3050 0    50   Input ~ 0
+Vin_switched
+Text GLabel 6550 3750 2    50   Input ~ 0
+SCL
+Text GLabel 6550 3950 2    50   Input ~ 0
+SDA
+Wire Wire Line
+	6550 3950 6350 3950
+Wire Wire Line
+	6350 3750 6550 3750
+$Comp
+L Device:C C30
+U 1 1 5CB75E54
+P 7150 3850
+F 0 "C30" H 7265 3896 50  0000 L CNN
+F 1 "100nF" H 7265 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7188 3700 50  0001 C CNN
+F 3 "~" H 7150 3850 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "GRM188R71C104KA01D" H 0   0   50  0001 C CNN "Part No."
+	1    7150 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3300 7150 3300
+Wire Wire Line
+	7150 3300 7150 3700
+Connection ~ 5950 3300
+Wire Wire Line
+	5950 3300 5950 3050
+Wire Wire Line
+	7150 4000 7150 4450
+$Comp
+L power:GND #PWR0119
+U 1 1 5CB77FAB
+P 7150 4450
+F 0 "#PWR0119" H 7150 4200 50  0001 C CNN
+F 1 "GND" H 7155 4277 50  0000 C CNN
+F 2 "" H 7150 4450 50  0001 C CNN
+F 3 "" H 7150 4450 50  0001 C CNN
+	1    7150 4450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

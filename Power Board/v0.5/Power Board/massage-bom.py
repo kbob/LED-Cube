@@ -63,7 +63,7 @@ def massage_reference(ref):
     assert all(k[0] == letter for k in key)
     ranges = condense_ranges([k[1] for k in key])
     ref = ' '.join(format_range(letter, r) for r in ranges)
-    ref = 'CUBE-PB4 ' + ref
+    ref = 'CUBE-PB5 ' + ref
     # print(f'ref {orig_ref!r} -> {ref!r}')
     return ref
     # for r in ranges:

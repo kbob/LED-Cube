@@ -1,6 +1,5 @@
 Reference, Quantity, Value, Footprint, Datasheet, Digikey No., Manufacturer, Part No., Package
 C10 ,1,"100µF","Capacitor_SMD:C_1210_3225Metric","~","587-1965-1-ND","Taiyo Yuden","LMK325BJ107MM-T",""
-C14 ,1,"1µF","Capacitor_SMD:C_0603_1608Metric","~","587-1438-1-ND","Taiyo Yuden","GMK212B7105KG-T",""
 C16 ,1,"1nF","Capacitor_SMD:C_0603_1608Metric","~","399-1083-1-ND","Kemet","C0603C102J5RACTU",""
 C17 C13 C31 ,3,"10µF","Capacitor_SMD:C_1206_3216Metric","~","490-10748-1-ND","Murata","GRM21BR61E106MA73L",""
 C19 C20 C21 C22 ,4,"47µF","Power_Board:CP_OSCON_Poly_F12","~","PCE5080CT-ND","Panasonic","35SVPD47M",""
@@ -9,7 +8,7 @@ C23 C24 C25 C26 ,4,"47µF","Capacitor_SMD:C_1210_3225Metric","~","490-10531-1-ND
 C28 C27 C30 ,3,"100nF","Capacitor_SMD:C_0603_1608Metric","~","-","Murata","GRM188R71C104KA01D",""
 C3 ,1,"100µF","Capacitor_SMD:CP_Elec_8x10","https://datasheet.octopart.com/EDK107M050A9MAA-Kemet-datasheet-13271990.pdf","399-6672-1-ND","Kemet","EDK107M050A9MAA",""
 C5 C4 ,2,"10µF","Capacitor_SMD:C_0805_2012Metric","~","490-10748-1-ND","Murata","GRM21BR61E106MA73L",""
-C6 C9 C1 C11 ,4,"1µF","Capacitor_SMD:C_0805_2012Metric","~","587-1438-1-ND","Taiyo Yuden","GMK212B7105KG-T","0603"
+C6 C9 C1 C14 C11 ,5,"1µF","Capacitor_SMD:C_0805_2012Metric","~","587-1438-1-ND","Taiyo Yuden","GMK212B7105KG-T",""
 C7 C29 ,2,"10nF","Capacitor_SMD:C_0603_1608Metric","~","-","Murata","GRM188R71H103KA01D","0603"
 C8 ,1,"22nF","Capacitor_SMD:C_0603_1608Metric","~","732-8009-1-ND","Wurth","885012206091",""
 D1 ,1,"LED, green","LED_SMD:LED_0603_1608Metric","~","-","Osram","LG Q971-KN-1",""

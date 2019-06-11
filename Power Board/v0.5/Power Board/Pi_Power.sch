@@ -275,10 +275,9 @@ F 0 "C6" H 5550 2550 50  0000 L CNN
 F 1 "1µF" H 5550 2350 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 5538 2300 50  0001 C CNN
 F 3 "~" H 5500 2450 50  0001 C CNN
-F 4 "0603" H 1200 200 50  0001 C CNN "Package"
-F 5 "587-1438-1-ND" H 0   0   50  0001 C CNN "Digikey No."
-F 6 "Taiyo Yuden" H 0   0   50  0001 C CNN "Manufacturer"
-F 7 "GMK212B7105KG-T" H 0   0   50  0001 C CNN "Part No."
+F 4 "587-1438-1-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Taiyo Yuden" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "GMK212B7105KG-T" H 0   0   50  0001 C CNN "Part No."
 	1    5500 2450
 	1    0    0    -1  
 $EndComp
@@ -331,10 +330,9 @@ F 0 "C9" H 9100 2550 50  0000 L CNN
 F 1 "1µF" H 9100 2350 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 9088 2300 50  0001 C CNN
 F 3 "~" H 9050 2450 50  0001 C CNN
-F 4 "0603" H 750 200 50  0001 C CNN "Package"
-F 5 "587-1438-1-ND" H 0   0   50  0001 C CNN "Digikey No."
-F 6 "Taiyo Yuden" H 0   0   50  0001 C CNN "Manufacturer"
-F 7 "GMK212B7105KG-T" H 0   0   50  0001 C CNN "Part No."
+F 4 "587-1438-1-ND" H 0   0   50  0001 C CNN "Digikey No."
+F 5 "Taiyo Yuden" H 0   0   50  0001 C CNN "Manufacturer"
+F 6 "GMK212B7105KG-T" H 0   0   50  0001 C CNN "Part No."
 	1    9050 2450
 	1    0    0    -1  
 $EndComp

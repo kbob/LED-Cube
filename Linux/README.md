@@ -131,6 +131,16 @@ history.log:Commandline: apt-get install ltrace
 history.log:Commandline: apt-get install stress
 history.log:Commandline: apt-get install i2c-tools
 history.log:Commandline: apt-get install libgles2-mesa-dev
+history.log:Commandline: apt-get install python3-pygments
+history.log:Commandline: apt-get install python-pygments
+history.log:Commandline: apt-get install tig
+history.log:Commandline: apt-get dist-upgrade
+history.log:Commandline: apt-get install apt-rdepends
+history.log:Commandline: apt autoremove
+history.log:Commandline: apt-get install git libeigen3-dev cmake wiringpi libboost-all-dev libasound2-dev libprotobuf-dev protobuf-compiler
+history.log:Commandline: apt-get install mesa-utils-extra
+history.log:Commandline: apt-get install avahi-utils
+history.log:Commandline: apt install vim
 ```
 
 (more to come...)

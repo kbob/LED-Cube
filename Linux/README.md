@@ -21,8 +21,6 @@ Before putting the card into the Raspberry Pi, append this to /boot/config.txt.
 
 ## Configure Wi-Fi
 
-[untested]
-
 Before putting the card into the Raspberry Pi, create the file
 `/boot/wpa_supplicant.conf`.
 
@@ -131,6 +129,12 @@ history.log:Commandline: apt-get install ltrace
 history.log:Commandline: apt-get install stress
 history.log:Commandline: apt-get install i2c-tools
 history.log:Commandline: apt-get install libgles2-mesa-dev
+history.log:Commandline: apt-get install libegl1-mesa-drivers
+history.log:Commandline: apt-get install netpbm
+history.log:Commandline: apt-get install libnetpbm10-dev
+history.log:Commandline: apt-get install valgrind
+history.log:Commandline: apt-get install python3-pil
+history.log:Commandline: apt-get install python3-numpy
 ```
 
 (more to come...)

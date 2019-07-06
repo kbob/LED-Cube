@@ -75,7 +75,7 @@ Reboot to enable the new swap space.
 
 Create `/etc/avahi/services/ssh.service`.
 
-    $ sudo cp /usr/share/doc/avahi/ssh.service /etc/avahi/services/
+    $ sudo cp /usr/share/doc/avahi-daemon/ssh.service /etc/avahi/services/
 
 ## Update and install packages
 

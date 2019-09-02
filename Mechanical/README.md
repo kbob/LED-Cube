@@ -5,17 +5,25 @@ and its accessories.  It is organized into subdirectories.
 
 * **Cube/** The cube.
 
+ ![photo](Cube/cube-thumb.jpg)
+
+
 * **Interlocking Stand/** Display stand made of three
 interlocking pieces.  Breaks down for easy transport.
+
+ ![photo](Interlocking%20Stand/interlocking-stand-thumb.jpg)
 
 * **Display Stand/** Single-piece display stand.  Sturdier
 than the interlocking stand but bulkier.
 
+ ![photo](Static%20Stand/stand-thumb.jpg)
+
 * **Display Stand/Travel Case/** a travel case for the
 single-piece display stand.
 
+ ![photo](Static%20Stand/Travel%20Case/stc-thumb.jpg)
 
-Each subdirectory should have a README, a BOM, some Fusion 360 files, and some STL files.  And maybe a picture.
+Each subdirectory should have a README, a BOM, some Fusion 360 files, some STL files, and a picture or two.
 
 
 ## Versions

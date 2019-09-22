@@ -41,11 +41,12 @@ Qty | Desc.                              | Source             | Notes
   1 | MicroSD card, 16GB or more         | any
   1 | iCEBreaker FPGA                    | [1BitSquared][1b1]
   1 | PMOD LED Panel Driver              | [1BitSquared][1b2]
-  6 | P2 LED Panel                       |                    | Note E.3
+  6 | P2 LED Panel                       | [1BitSquared][1b3] | Note E.3
 
 [ae1]: https://www.aliexpress.com/item/32913021851.html
 [1b1]: https://www.crowdsupply.com/1bitsquared/icebreaker-fpga
 [1b2]: https://1bitsquared.com/products/pmod-led-panel-driver
+[1b2]: https://1bitsquared.com/collections/embedded-hardware/products/led-panel
 
 ##### Note E.1
 
@@ -61,7 +62,9 @@ the current cube.
 
 ##### Note E.3
 
-I have no reliable source for LED panels that fit these frames.
+~~I have no reliable source for LED panels that fit these frames.~~
+1BitSquared is now carrying the correct panel.  Be sure to get the
+ICN2037 version.
 See README in this repository's top directory for more info.
 
 

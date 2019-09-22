@@ -72,6 +72,10 @@ I only want offscreen rendering.)
 
 # More LED Panels
 
+**Update 2019-09-22:**  Good news!  1BitSquared now has [the correct
+LED panels](https://1bitsquared.com/collections/embedded-hardware/products/led-panel)
+in stock.  Get the ICN2037 variant.
+
 The Aliexpress vendors do not ship a single version of the HUB75
 panels.  Instead, you get whatever vendors happen to be available
 surplus.  Each version has different driver chips, timing requirements,
@@ -79,6 +83,6 @@ mechanical layout, even power voltage requirements.  So today
 the panels on the cube are irreplaceable.  If one dies, I'll
 have no cube.
 
-Esden is working on getting a reliable source for LED panels.
+~~Esden is working on getting a reliable source for LED panels.
 Follow him on twitter ([@esden](https://twitter.com/esden))
-to stay up to date.
+to stay up to date.~~

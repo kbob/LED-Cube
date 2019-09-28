@@ -35,7 +35,7 @@ it from the CAD file would be a bother.
 
 Qty | Desc.                              | Source             | Notes
 ----|------------------------------------|--------------------|----------
-  1 | 4s2p 18650 Battery Pack w/ Charger |[AliExpress][ae1]   | Note E.1
+  1 | 4s2p 18650 Battery Pack w/ Charger | [AliExpress][ae1]  | Note E.1
   1 | Power Board                        | this repository
   1 | Raspberry Pi                       | any                | Note E.2
   1 | MicroSD card, 16GB or more         | any
@@ -46,7 +46,7 @@ Qty | Desc.                              | Source             | Notes
 [ae1]: https://www.aliexpress.com/item/32913021851.html
 [1b1]: https://www.crowdsupply.com/1bitsquared/icebreaker-fpga
 [1b2]: https://1bitsquared.com/products/pmod-led-panel-driver
-[1b2]: https://1bitsquared.com/collections/embedded-hardware/products/led-panel
+[1b3]: https://1bitsquared.com/collections/embedded-hardware/products/led-panel
 
 ##### Note E.1
 
